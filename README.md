@@ -16,9 +16,9 @@
 <h4 align="center">
 <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/></a>
-<a href="https://github.com/"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>
-<a href="https://github.com/"><img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>
-<a href="https://github.com/"><img src="https://img.shields.io/badge/Java-000000.svg?style=for-the-badge&logo=java&logoColor=white"/></a>
+<a href="https://www.notion.com"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>
+<a href="https://www.jetbrains.com/pt-br/idea"><img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>
+<a href="https://www.java.com/pt-br/download/manual.jsp"><img src="https://img.shields.io/badge/Java-000000.svg?style=for-the-badge&logo=java&logoColor=white"/></a>
 </h4>
 
 ## Estrutura do projeto
