@@ -43,7 +43,6 @@
   <li>Luiz Gustavo - </li>
   <li>Richard Rangel - </li>
 </ul>
-<br>
 <h2>GitHub</h2>
 <ul>
   <li>Anna Mendes - </li>
