@@ -20,7 +20,16 @@
 ## Sprints
 
 ## Tecnologias utilizadas
+<h4 align="center">
+<a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/></a>
+<a href="https://github.com/"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>
+<a href="https://github.com/"><img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>
+<a href="https://github.com/"><img src="https://img.shields.io/badge/Java-000000.svg?style=for-the-badge&logo=java&logoColor=white"/></a>
 
+
+
+</h4>
 ## Estrutura do projeto
 
 ## Como executar, usar e testar o projeto
@@ -33,26 +42,58 @@
 <img src="assets/members.jpeg" alt="Equipe e funções" width="600px" />
 </div>
 <br>
-<h2>LinkedIn</h2>
-<ul>
-  <li>Anna Mendes - </li>
-  <li>Cauã Mohor - </li>
-  <li>Fagner Nascimento - </li>
-  <li>Flavio Pereira - </li>
-  <li>Lucas Castro - </li>
-  <li>Luiz Gustavo - </li>
-  <li>Richard Rangel - </li>
-</ul>
-<h2>GitHub</h2>
-<ul>
-  <li>Anna Mendes - </li>
-  <li>Cauã Mohor - </li>
-  <li>Fagner Nascimento - </li>
-  <li>Flavio Pereira - </li>
-  <li>Lucas Castro - </li>
-  <li>Luiz Gustavo - </li>
-  <li>Richard Rangel - </li>
-</ul>
+<div align="left">
+  <table>
+    <tr>
+      <th>Membro</th>
+      <th>Função</th>
+      <th>Github</th>
+      <th>Linkedin</th>
+    </tr>
+    <tr>
+      <td>Lucas Catro</td>
+      <td>Product Owner</td>
+      <td><a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+    <tr>
+      <td>Luiz Gustavo</td>
+      <td>Scrum Master</td>
+      <td><a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+    <tr>
+      <td>Anna Mendes</td>
+      <td>Desenvolvedor</td>
+      <td><a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+    <tr>
+      <td>Cauã Mohor</td>
+      <td>Desenvolvedor</td>
+      <td><a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+    <tr>
+      <td>Fagner Nascimento</td>
+      <td>Desenvolvedor</td>
+      <td><a href="https://github.com/dodekafonos"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="http://linkedin.com/in/jonas-alves"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+    <tr>
+      <td>Flávio Pereira</td>
+      <td>Desenvolvedor</td>
+      <td><a href="https://github.com/PedrohDavi"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/pedro-davi-jobs/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+    <tr>
+      <td>Richard Rangel</td>
+      <td>Desenvolvedor</td>
+      <td><a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    </tr>
+  </table>
+</div>
 
 
 ## Requisitos de Permanência
