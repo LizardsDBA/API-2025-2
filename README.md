@@ -1,11 +1,4 @@
 # API 2º Semestre BD
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
 ## Título do projeto
 #### Ciclo de Vida de TG da modalidade Portfólio
@@ -26,10 +19,8 @@
 <a href="https://github.com/"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>
 <a href="https://github.com/"><img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>
 <a href="https://github.com/"><img src="https://img.shields.io/badge/Java-000000.svg?style=for-the-badge&logo=java&logoColor=white"/></a>
-
-
-
 </h4>
+
 ## Estrutura do projeto
 
 ## Como executar, usar e testar o projeto
