@@ -42,7 +42,7 @@
       <th>Linkedin</th>
     </tr>
     <tr>
-      <td>Lucas Catro</td>
+      <td>Lucas Castro</td>
       <td>Product Owner</td>
       <td><a href="https://github.com/stlucass"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/lucas-castro-39a427285"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
