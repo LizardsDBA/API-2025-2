@@ -27,7 +27,7 @@
 
 ## Documentação
 
-## Integrantes do projeto
+## Equipe
 
 <div align="left">
 <img src="assets/members.jpeg" alt="Equipe e funções" width="600px" />
