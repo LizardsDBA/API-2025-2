@@ -3,8 +3,10 @@
 ## Título do projeto
 #### Ciclo de Vida de TG da modalidade Portfólio
 
-## Descrição do projeto
-#### A confecção e orientação de Trabalhos de Graduação (TG) da modalidade Portfólio representam um desafio tanto para os alunos quanto para os professores. Um TG Portfólio é composto por uma seção de apresentação do aluno e várias seções correspondentes aos APIs, uma para cada semestre (com um total de 6). Geralmente, o aluno envia uma seção do TG por vez para que seu orientador corrija. O orientador então revisa a seção e retorna um feedback. Essa interação pode ocorrer diversas vezes para a seção, até que o orientador esteja satisfeito com o resultado.
+## Desafio
+#### O desafio consiste em criar uma plataforma web unificada para a orientação de Trabalhos de Graduação (TG) Portfólio. A aplicação deve centralizar a comunicação entre alunos e professores, fornecendo um histórico completo de feedbacks e versões do projeto. O objetivo é solucionar a ineficiência das ferramentas atuais, eliminando a perda de informações e a falta de rastreabilidade do processo de orientação, garantindo um fluxo de trabalho claro e eficiente para todos os envolvidos..
+
+## Solução
 
 ## Backlog do Produto
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | REQUISITO DO CLIENTE | STATUS |
@@ -20,6 +22,20 @@
 | 9 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | | | | |
 | 10 | Baixa | Como professor orientador, eu quero visualizar de forma clara o percentual de andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | | | | |
 | 11 | Baixa | Como professor da disciplina de TG, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | | | | |
+
+## DoR - Definition of Ready
+* User Stories com **Critérios de Aceitação**
+* Tarefas divididas **a partir das User Stories**
+* Modelagem do **Banco de Dados**
+* Design no **Figma**
+* A User Story foi validada e aprovada pelo **Product Owner**.
+* Não há dependências externas ou bloqueios impedindo o **início do trabalho**.
+
+## DoD - Definition of Done
+* Manual de Usuário
+* Manual da Aplicação
+* Código completo
+* Vídeos de cada etapa de entrega
 ## Evolução do Projeto
 
 ## Sprints
