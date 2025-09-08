@@ -7,7 +7,19 @@
 #### A confecção e orientação de Trabalhos de Graduação (TG) da modalidade Portfólio representam um desafio tanto para os alunos quanto para os professores. Um TG Portfólio é composto por uma seção de apresentação do aluno e várias seções correspondentes aos APIs, uma para cada semestre (com um total de 6). Geralmente, o aluno envia uma seção do TG por vez para que seu orientador corrija. O orientador então revisa a seção e retorna um feedback. Essa interação pode ocorrer diversas vezes para a seção, até que o orientador esteja satisfeito com o resultado.
 
 ## Backlog do Produto
-
+| RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | REQUISITO DO CLIENTE | STATUS |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Alta | Como aluno, eu quero que a plataforma de feedback e comunicação seja confiável e centralizada, para que eu não perca as mensagens do orientador em meio a outras conversas e e-mails. | | | | |
+| 2 | Alta | Como professor orientador, eu quero um sistema que me notifique quando um aluno submeter uma nova versão do TG, para que eu possa dar o feedback em tempo hábil. | | | | |
+| 3 | Média | Como aluno, eu quero uma interface intuitiva para submeter meu TG em formato MD (Markdown), para que eu possa focar no conteúdo, mesmo sem dominar essa tecnologia. | | | | |
+| 4 | Média | Como professor orientador, eu quero ter um histórico de todas as correções e feedbacks por aluno, para que eu possa acompanhar o progresso e não repetir comentários. | | | | |
+| 5 | Média | Como aluno, eu quero ter acesso a um histórico completo de todas as versões do meu TG, para que eu possa ver a evolução do meu projeto e as correções passadas. | | | | |
+| 6 | Média | Como professor orientador, eu quero poder dar feedback diretamente no texto do aluno, para que minhas correções sejam mais claras e específicas. | | | | |
+| 7 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho. | | | | |
+| 8 | Média | Como aluno, eu quero poder comparar diferentes versões do meu TG, para que eu possa ver as mudanças exatas que fiz ou as que o professor sugeriu. | | | | |
+| 9 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | | | | |
+| 10 | Baixa | Como professor orientador, eu quero visualizar de forma clara o percentual de andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | | | | |
+| 11 | Baixa | Como professor da disciplina de TG, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | | | | |
 ## Evolução do Projeto
 
 ## Sprints
