@@ -51,6 +51,33 @@
 
 ## Estrutura do projeto
 
+---
+
+## Estratégia de Branch
+
+**Modelo adotado: GitHub Flow (simplificado e adequado ao TG).**
+
+### `main` (protegida)
+- Sempre estável e demonstrável.  
+- Só recebe merge via **Pull Request aprovado** e com **build verde**.  
+
+### Branches de trabalho
+- `feat/*` → novas funcionalidades.  
+- `fix/*` → correções de bugs.  
+- `docs/*` → documentação (README, manuais, tutoriais).  
+- `chore/*` → ajustes de infraestrutura, dependências ou refactors leves.  
+- `hotfix/*` → correções urgentes diretamente relacionadas a releases.  
+
+### Pull Requests (PR)
+- **Obrigatório** para merge na `main`.  
+- Revisão por pelo menos **1 colega da equipe**.  
+- Deve conter:
+  - Breve descrição da entrega.  
+  - Checklist de testes manuais realizados.  
+
+---
+
+
 ## Como executar, usar e testar o projeto
 
 ## Documentação
