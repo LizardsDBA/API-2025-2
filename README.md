@@ -45,7 +45,8 @@
 <a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/></a>&nbsp;
 <a href="https://www.notion.com"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>&nbsp;
 <a href="https://www.jetbrains.com/pt-br/idea"><img src="https://img.shields.io/badge/IntelliJ%20IDEA-0076D6.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>&nbsp;
-<a href="https://www.java.com/pt-br/download/manual.jsp"><img src="https://img.shields.io/badge/Java-EA7018.svg?style=for-the-badge&logo=java&logoColor=white"/></a>
+<a href="https://www.java.com/pt-br/download/manual.jsp"><img src="https://img.shields.io/badge/Java-EA7018.svg?style=for-the-badge&logo=java&logoColor=white"/></a>&nbsp;
+<a href="https://www.atlassian.com/br/software/jira"><img src="https://img.shields.io/badge/Jira-0052CC.svg?style=for-the-badge&logo=jira&logoColor=white"/></a>
 </h4>
 
 ## Estrutura do projeto
