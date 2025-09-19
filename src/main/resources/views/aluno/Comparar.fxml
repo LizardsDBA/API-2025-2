@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.CompararAlunoController" spacing="12" style="-fx-padding: 12">
+  <Label text="Aluno — Comparar versões" styleClass="title"/>
+  <HBox spacing="8">
+    <ComboBox promptText="Versão A"/>
+    <ComboBox promptText="Versão B"/>
+  </HBox>
+  <SplitPane dividerPositions="0.5">
+    <ScrollPane fitToWidth="true"><Label text="Texto A"/></ScrollPane>
+    <ScrollPane fitToWidth="true"><Label text="Texto B"/></ScrollPane>
+  </SplitPane>
+  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+</VBox>

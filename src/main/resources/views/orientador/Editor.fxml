@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.EditorOrientadorController" spacing="12" style="-fx-padding: 12">
+  <Label text="Orientador — Editor/Correção" styleClass="title"/>
+  <SplitPane dividerPositions="0.5">
+    <ScrollPane fitToWidth="true"><Label text="Texto do aluno"/></ScrollPane>
+    <TextArea fx:id="txtMarkdown" promptText="Comentário / feedback"/>
+  </SplitPane>
+  <HBox spacing="8">
+    <Button text="Comentar" styleClass="btn btn-primary" onAction="#comentar"/>
+    <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+  </HBox>
+</VBox>

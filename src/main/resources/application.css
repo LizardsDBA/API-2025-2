@@ -1,0 +1,8 @@
+.root { -fx-font-family: "Segoe UI", "Roboto", system-ui; -fx-base: #f2f2f2; }
+.card { -fx-background-color: white; -fx-border-color: #d6d6d6; -fx-background-insets: 0; -fx-background-radius: 12; -fx-border-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,.06), 8, 0, 0, 2); -fx-padding: 12; }
+.btn { -fx-background-color: linear-gradient(#fbfbfb,#efefef); -fx-border-color: #d6d6d6; -fx-background-radius: 8; -fx-border-radius: 8; -fx-font-weight: 600; }
+.btn-primary { -fx-background-color: linear-gradient(#3e86ea,#366fc5); -fx-text-fill: white; -fx-border-color: #2f62ac; }
+.kpi { -fx-alignment: center; -fx-font-weight: 700; -fx-background-color: linear-gradient(#ffffff,#f7f7f7); -fx-border-color: #d6d6d6; -fx-background-radius: 8; -fx-border-radius: 8; -fx-min-height: 100; -fx-max-height: 100; }
+.pill { -fx-background-color: #edf2ff; -fx-text-fill: #315ea8; -fx-border-color: #cfe0ff; -fx-padding: 2 8; -fx-background-radius: 999; -fx-border-radius: 999; }
+.title { -fx-font-size:20; -fx-font-weight:700; }
+.subtle { -fx-text-fill:#6f6f6f; }

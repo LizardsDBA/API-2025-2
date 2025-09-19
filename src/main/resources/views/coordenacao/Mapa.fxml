@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.coordenacao.MapaCoordController" spacing="12" style="-fx-padding: 12">
+  <Label text="Coordenação — Mapa de Orientação" styleClass="title"/>
+  <TableView prefHeight="480" styleClass="card">
+    <columns>
+      <TableColumn text="Professor" prefWidth="240"/>
+      <TableColumn text="Aluno" prefWidth="240"/>
+      <TableColumn text="Status" prefWidth="200"/>
+      <TableColumn text="Última atualização" prefWidth="220"/>
+    </columns>
+  </TableView>
+  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+</VBox>

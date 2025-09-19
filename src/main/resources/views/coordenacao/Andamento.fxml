@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.coordenacao.AndamentoCoordController" spacing="12" style="-fx-padding: 12">
+  <Label text="Coordenação — Andamento" styleClass="title"/>
+  <TableView prefHeight="480" styleClass="card">
+    <columns>
+      <TableColumn text="Aluno" prefWidth="240"/>
+      <TableColumn text="Seção" prefWidth="240"/>
+      <TableColumn text="%" prefWidth="80"/>
+      <TableColumn text="Status" prefWidth="200"/>
+    </columns>
+  </TableView>
+  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+</VBox>

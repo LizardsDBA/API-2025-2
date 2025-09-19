@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.InboxAlunoController" spacing="12" style="-fx-padding: 12">
+  <Label text="Aluno — Inbox" styleClass="title"/>
+  <TableView fx:id="tblMensagens" prefHeight="420" styleClass="card">
+    <columns>
+      <TableColumn text="Seção" prefWidth="160"/>
+      <TableColumn text="Versão" prefWidth="80"/>
+      <TableColumn text="Mensagem" prefWidth="520"/>
+      <TableColumn text="Status" prefWidth="120"/>
+    </columns>
+  </TableView>
+  <HBox spacing="8">
+    <Button text="Abrir Editor" styleClass="btn" onAction="#goEditor"/>
+    <Button text="Voltar" styleClass="btn" onAction="#goDashboard"/>
+  </HBox>
+</VBox>

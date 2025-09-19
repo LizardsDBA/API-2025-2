@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.ChatAlunoController" style="-fx-padding: 12">
+  <top><Label text="Aluno — Chat" styleClass="title"/></top>
+  <center>
+    <ListView/>
+  </center>
+  <bottom>
+    <HBox spacing="8">
+      <TextField promptText="Digite uma mensagem" HBox.hgrow="ALWAYS"/>
+      <Button text="Enviar" styleClass="btn"/>
+      <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+    </HBox>
+  </bottom>
+</BorderPane>

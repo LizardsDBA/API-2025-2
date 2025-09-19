@@ -2,10 +2,13 @@ module org.example {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
-    requires javafx.graphics;
 
     opens br.edu.fatec.api to javafx.graphics, javafx.fxml;
+    opens br.edu.fatec.api.controller to javafx.fxml;
+    opens br.edu.fatec.api.controller.aluno to javafx.fxml;
+    opens br.edu.fatec.api.controller.orientador to javafx.fxml;
+    opens br.edu.fatec.api.controller.coordenacao to javafx.fxml;
+
+
     exports br.edu.fatec.api;
-    exports br.edu.fatec.api.controller;
-    opens br.edu.fatec.api.controller to javafx.fxml, javafx.graphics;
 }

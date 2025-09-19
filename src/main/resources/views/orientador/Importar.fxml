@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.ImportarOrientadorController" spacing="12" style="-fx-padding: 12">
+  <Label text="Orientador — Importar Formulários" styleClass="title"/>
+  <HBox spacing="8"><Button text="Escolher arquivo" styleClass="btn"/><Label text="Nenhum arquivo selecionado"/></HBox>
+  <TableView prefHeight="420" styleClass="card">
+    <columns>
+      <TableColumn text="Arquivo" prefWidth="280"/>
+      <TableColumn text="Itens válidos" prefWidth="140"/>
+      <TableColumn text="Itens inválidos" prefWidth="140"/>
+      <TableColumn text="Status" prefWidth="160"/>
+    </columns>
+  </TableView>
+  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.PainelOrientadorController" spacing="12" style="-fx-padding: 12">
+  <Label text="Orientador — Painel de Pendências" styleClass="title"/>
+  <TableView fx:id="tblPendencias" prefHeight="420" styleClass="card">
+    <columns>
+      <TableColumn text="Aluno" prefWidth="160"/>
+      <TableColumn text="Seção" prefWidth="160"/>
+      <TableColumn text="Versão" prefWidth="80"/>
+      <TableColumn text="Pedido" prefWidth="280"/>
+      <TableColumn text="Prioridade" prefWidth="120"/>
+      <TableColumn text="Ações" prefWidth="180"/>
+    </columns>
+  </TableView>
+  <HBox spacing="8">
+    <Button text="Abrir Editor" styleClass="btn" onAction="#abrirEditor"/>
+    <Button text="Abrir Chat" styleClass="btn" onAction="#abrirChat"/>
+    <Button text="Voltar" styleClass="btn" onAction="#goVisaoGeral"/>
+  </HBox>
+</VBox>

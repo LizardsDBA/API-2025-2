@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.EditorAlunoController" spacing="12" style="-fx-padding: 12">
+  <Label text="Aluno — Editor Markdown" styleClass="title"/>
+  <SplitPane dividerPositions="0.5">
+    <TextArea fx:id="txtMarkdown" promptText="# Markdown aqui"/>
+    <ScrollPane fitToWidth="true"><Label text="(Preview)"/></ScrollPane>
+  </SplitPane>
+  <HBox spacing="8">
+    <Button text="Salvar" styleClass="btn btn-primary" onAction="#salvar"/>
+    <Button text="Enviar para revisão" styleClass="btn" onAction="#enviar"/>
+    <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+  </HBox>
+</VBox>

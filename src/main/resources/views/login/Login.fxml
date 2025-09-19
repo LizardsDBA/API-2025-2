@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.LoginController" style="-fx-padding: 12">
+  <VBox maxWidth="520" spacing="12" alignment="CENTER" styleClass="card">
+    <Label text="Login" styleClass="title"/>
+    <Label text="Use os botões para simular o perfil" styleClass="subtle"/>
+    <GridPane hgap="8" vgap="8">
+      <columnConstraints><ColumnConstraints percentWidth="30"/><ColumnConstraints percentWidth="70"/></columnConstraints>
+      <Label text="Usuário" GridPane.rowIndex="0"/>
+      <TextField promptText="simulado" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+      <Label text="Senha" GridPane.rowIndex="1"/>
+      <PasswordField promptText="simulado" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    </GridPane>
+    <HBox spacing="8">
+      <Button text="Entrar como Aluno" styleClass="btn btn-primary" onAction="#goAluno"/>
+      <Button text="Orientador" styleClass="btn" onAction="#goOrientador"/>
+      <Button text="Coordenador" styleClass="btn" onAction="#goCoordenador"/>
+    </HBox>
+  </VBox>
+</StackPane>

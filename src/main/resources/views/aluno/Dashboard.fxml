@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.DashboardAlunoController" spacing="12" style="-fx-padding: 12">
+  <Label text="Aluno — Dashboard" styleClass="title"/>
+  <Label text="Atalhos e status do seu TG." styleClass="subtle"/>
+  <HBox spacing="12">
+    <StackPane styleClass="card kpi"><Label text="% Conclusão — 48%"/></StackPane>
+    <StackPane styleClass="card kpi"><Label text="Pendências — 3"/></StackPane>
+    <StackPane styleClass="card kpi"><Label text="Última versão — v1.4"/></StackPane>
+  </HBox>
+  <HBox spacing="8">
+    <Button text="Inbox" styleClass="btn" onAction="#goInbox"/>
+    <Button text="Editor Markdown" styleClass="btn" onAction="#goEditor"/>
+    <Button text="Histórico" styleClass="btn" onAction="#goHistorico"/>
+    <Button text="Comparar" styleClass="btn" onAction="#goComparar"/>
+    <Button text="% Conclusão" styleClass="btn" onAction="#goConclusao"/>
+    <Button text="Chat" styleClass="btn" onAction="#goChat"/>
+  </HBox>
+</VBox>
