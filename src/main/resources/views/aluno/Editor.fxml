@@ -1,57 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Region?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<GridPane fx:controller="com.example.alunoeditor.AlunoEditorController" stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <!-- Header (Row 0, Col 0-1) -->
-    <HBox fx:id="header" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="header" alignment="CENTER_LEFT" spacing="10">
-        <ImageView fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true" styleClass="logo"/>
-        <Label text="API/TG" styleClass="app-title"/>
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.edu.fatec.api.controller.aluno.EditorAlunoController"
+      spacing="0">
+
+    <!-- Header -->
+    <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="header">
+        <padding>
+            <Insets top="10.0" right="16.0" bottom="10.0" left="16.0"/>
+        </padding>
+        <Label styleClass="logo" text="API/TG"/>
         <Region HBox.hgrow="ALWAYS"/>
-        <Button text="Home" styleClass="nav-button"/>
-        <Button text="Sair" styleClass="nav-button"/>
+        <Button text="Home" onAction="#goHome"/>
+        <Button text="Sair" onAction="#logout"/>
     </HBox>
 
-    <!-- Sidebar (Row 1, Col 0) -->
-    <VBox fx:id="sidebar" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="sidebar" spacing="10" alignment="TOP_CENTER">
-        <ImageView fitHeight="80" fitWidth="80" pickOnBounds="true" preserveRatio="true" styleClass="profile-image"/>
-        <Label text="Nome do Aluno" styleClass="profile-name"/>
-        <Button text="Meu Perfil" styleClass="sidebar-button" maxWidth="Infinity"/>
-        <Button text="Meus Projetos" styleClass="sidebar-button" maxWidth="Infinity"/>
-        <Button text="Configurações" styleClass="sidebar-button" maxWidth="Infinity"/>
-    </VBox>
+    <!-- Main Layout with Sidebar -->
+    <HBox VBox.vgrow="ALWAYS" spacing="16.0">
+        <padding>
+            <Insets top="16.0" right="16.0" bottom="16.0" left="16.0"/>
+        </padding>
 
-    <!-- Main Content (Row 1, Col 1) -->
-    <VBox fx:id="mainContent" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="main-content" spacing="10">
-        <Label text="Título do Projeto" styleClass="content-title"/>
-        <Label text="Home > Meus Projetos > Título do Projeto" styleClass="breadcrumbs"/>
-        <HBox spacing="10" VBox.vgrow="ALWAYS">
-            <VBox HBox.hgrow="ALWAYS" spacing="5">
-                <HBox styleClass="markdown-toolbar" alignment="CENTER_LEFT" spacing="5">
-                    <Button text="B" styleClass="toolbar-button"/>
-                    <Button text="I" styleClass="toolbar-button"/>
-                    <Button text="U" styleClass="toolbar-button"/>
-                    <Button text="H1" styleClass="toolbar-button"/>
-                    <Button text="Link" styleClass="toolbar-button"/>
-                </HBox>
-                <TextArea fx:id="markdownEditor" promptText="Escreva seu conteúdo aqui..." VBox.vgrow="ALWAYS" styleClass="markdown-editor"/>
+        <!-- Sidebar (mesmo padrão do DashboardAluno) -->
+        <VBox prefWidth="240.0" spacing="8.0" styleClass="sidebar">
+            <Label styleClass="sidebar-title" text="Aluno"/>
+
+            <Label styleClass="sidebar-group" text="GERAL"/>
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    styleClass="sidebar-link" text="Dashboard" onAction="#goDashboard"/>
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    styleClass="sidebar-link" text="Inbox" onAction="#goInbox"/>
+
+            <Label styleClass="sidebar-group" text="TG"/>
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    styleClass="sidebar-link" text="Markdown (Editor e Feedback)" onAction="#goEditor"/>
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    styleClass="sidebar-link" text="Comparar Versões" onAction="#goComparar"/>
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    styleClass="sidebar-link" text="Conclusão" onAction="#goConclusao"/>
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    styleClass="sidebar-link" text="Histórico" onAction="#goHistorico"/>
+        </VBox>
+
+        <!-- Main Content (card) -->
+        <VBox HBox.hgrow="ALWAYS" spacing="16.0" styleClass="card">
+
+            <!-- Título da Página -->
+            <VBox spacing="6.0">
+                <Label styleClass="title" text="Aluno — Editor"/>
+                <Label styleClass="subtitle"
+                       text="Escreva em Markdown e acompanhe o feedback do orientador."/>
             </VBox>
-            <ScrollPane HBox.hgrow="NEVER" fitToWidth="true" styleClass="comments-scroll-pane">
-                <VBox fx:id="commentsSection" spacing="10" styleClass="comments-section"/>
-            </ScrollPane>
-        </HBox>
-    </VBox>
 
-    <!-- Footer (Row 2, Col 0-1) -->
-    <HBox fx:id="footer" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="footer" alignment="CENTER">
-        <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+            <!-- Editor + Comentários -->
+            <HBox spacing="12.0" VBox.vgrow="ALWAYS">
+
+                <!-- Coluna do Editor -->
+                <VBox HBox.hgrow="ALWAYS" spacing="6.0" VBox.vgrow="ALWAYS">
+                    <HBox styleClass="markdown-toolbar" alignment="CENTER_LEFT" spacing="6.0">
+                        <Button text="B" onAction="#toggleBold"/>
+                        <Button text="I" onAction="#toggleItalic"/>
+                        <Button text="U" onAction="#toggleUnderline"/>
+                        <Button text="H1" onAction="#insertH1"/>
+                        <Button text="Link" onAction="#insertLink"/>
+                        <Region HBox.hgrow="ALWAYS"/>
+                        <Button text="Preview" onAction="#preview"/>
+                        <Button text="Salvar" onAction="#salvarVersao"/>
+                    </HBox>
+
+                    <TextArea fx:id="markdownEditor" VBox.vgrow="ALWAYS"
+                              promptText="Escreva seu conteúdo aqui..."
+                              styleClass="markdown-editor"/>
+                </VBox>
+
+                <!-- Coluna de Comentários -->
+                <ScrollPane fitToWidth="true" prefWidth="320.0">
+                    <VBox fx:id="commentsSection" spacing="8.0" styleClass="comments-section"/>
+                </ScrollPane>
+            </HBox>
+        </VBox>
     </HBox>
-</GridPane>
+
+    <!-- Footer -->
+    <HBox alignment="CENTER" spacing="12.0" styleClass="footer">
+        <padding>
+            <Insets top="12.0" right="12.0" bottom="12.0" left="16.0"/>
+        </padding>
+        <Label styleClass="subtle" text="Wireframe API 2025-2"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Label styleClass="subtle" text="Grupo LizzardsDBA"/>
+    </HBox>
+</VBox>

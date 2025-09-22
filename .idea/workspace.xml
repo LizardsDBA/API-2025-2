@@ -4,42 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063f6b3e-795c-4853-aaf3-864ca5d7ca2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.db" beforeDir="false" afterPath="$PROJECT_DIR$/api.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/capa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/members.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold_front.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/AppCreateDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/AppCreateDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/config/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/config/Database.java" afterDir="false" />
+    <list default="true" id="063f6b3e-795c-4853-aaf3-864ca5d7ca2f" name="Changes" comment="feat: continuação do front end">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/CompararAlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/CompararAlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/ConclusaoAlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/ConclusaoAlunoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/DashboardAlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/DashboardAlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/EditorAlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/EditorAlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/HistoricoAlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/HistoricoAlunoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/InboxAlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/aluno/InboxAlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/VisaoGeralOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/VisaoGeralOrientadorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/nav/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/nav/SceneManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Chat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Chat.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Comparar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Comparar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Conclusao.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Conclusao.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Dashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Editor.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Historico.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Historico.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/aluno/Inbox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/aluno/Inbox.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Andamento.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Andamento.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Mapa.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Mapa.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenacao/VisaoGeral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/coordenacao/VisaoGeral.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenador.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/login/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/login/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Chat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Chat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Importar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Importar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Notificacoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Notificacoes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Painel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Painel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Parecer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Parecer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/VisaoGeral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/VisaoGeral.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,28 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Shell Script.setup.sh.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/fag/api&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Shell Script.setup.sh.executor": "Run",
+    "git-widget-placeholder": "feat/estrutura-front",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/fag/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="api-tg-platform" />
@@ -93,26 +78,6 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="setup.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/setup.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Shell Script.setup.sh" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -136,10 +101,25 @@
       <workItem from="1758555382778" duration="329000" />
       <workItem from="1758555759756" duration="30000" />
       <workItem from="1758555799463" duration="337000" />
+      <workItem from="1758556741442" duration="199000" />
+      <workItem from="1758557096640" duration="13925000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: continuação do front end">
+      <option name="closed" value="true" />
+      <created>1758556843145</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758556843145</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: continuação do front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: continuação do front end" />
   </component>
 </project>

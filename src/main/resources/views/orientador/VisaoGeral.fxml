@@ -1,72 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Region?>
-<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.edu.fatec.api.controller.orientador.VisaoGeralOrientadorController"
+      spacing="0">
 
-<BorderPane fx:controller="com.example.OrientadorVisaoGeralController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
-    <stylesheets>
-        <URL value="@style.css" />
-    </stylesheets>
-    <top>
-        <!-- Header will go here -->
-        <HBox styleClass="header-container" alignment="CENTER_LEFT" spacing="10">
-            <ImageView fitHeight="50" fitWidth="50" preserveRatio="true" styleClass="logo-image"/>
-            <Label text="API/TG" styleClass="app-title"/>
-            <Region HBox.hgrow="ALWAYS"/>
-            <Button text="Home" styleClass="nav-button"/>
-            <Button text="Sair" styleClass="nav-button"/>
-        </HBox>
-    </top>
-    <left>
-        <!-- Sidebar will go here -->
-        <VBox styleClass="sidebar-container" spacing="10" alignment="TOP_CENTER">
-            <Label text="Perfil" styleClass="sidebar-title"/>
-            <Button text="Meus Dados" styleClass="sidebar-button"/>
-            <Button text="Minhas Orientações" styleClass="sidebar-button"/>
-            <Button text="Configurações" styleClass="sidebar-button"/>
+    <!-- Header -->
+    <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="header">
+        <padding>
+            <Insets top="10.0" right="16.0" bottom="10.0" left="16.0" />
+        </padding>
+        <Label styleClass="logo" text="API/TG" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button onAction="#goHome" text="Home" />
+        <Button onAction="#logout" text="Sair" />
+    </HBox>
+
+    <!-- Main Layout with Sidebar -->
+    <HBox VBox.vgrow="ALWAYS" spacing="16.0">
+        <padding>
+            <Insets top="16.0" right="16.0" bottom="16.0" left="16.0" />
+        </padding>
+
+        <!-- Sidebar -->
+        <VBox prefWidth="240.0" spacing="8.0" styleClass="sidebar">
+            <Label styleClass="sidebar-title" text="Orientador" />
+            <Label styleClass="sidebar-group" text="GERAL" />
+
+            <!-- Links (mapeados às views do orientador) -->
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goHome" styleClass="sidebar-link" text="Visão Geral" />
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goPainel" styleClass="sidebar-link" text="Painel" />
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goNotificacoes" styleClass="sidebar-link" text="Notificações" />
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goEditor" styleClass="sidebar-link" text="Editor (Feedback/Parecer)" />
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goParecer" styleClass="sidebar-link" text="Parecer" />
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goImportar" styleClass="sidebar-link" text="Importar (Markdown/TG)" />
+            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goChat" styleClass="sidebar-link" text="Chat" />
         </VBox>
-    </left>
-    <center>
-        <!-- Main content will go here -->
-        <VBox styleClass="main-content-container" spacing="20" padding="20">
-            <HBox alignment="CENTER_LEFT" spacing="10">
-                <Label text="Visão Geral do Orientador" styleClass="page-title"/>
-                <Region HBox.hgrow="ALWAYS"/>
-                <Label text="Home > Orientador > Visão Geral" styleClass="breadcrumbs"/>
-            </HBox>
-            <GridPane hgap="20" vgap="20" alignment="CENTER">
-                <VBox GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="kpi-card">
-                    <Label text="0" styleClass="kpi-value"/>
-                    <Label text="Pendentes" styleClass="kpi-label"/>
+
+        <!-- Main Content -->
+        <VBox HBox.hgrow="ALWAYS" spacing="16.0" styleClass="card">
+            <!-- Page Title -->
+            <VBox spacing="6.0">
+                <Label styleClass="title" text="Orientador — Visão Geral" />
+                <Label styleClass="subtitle" text="Atalhos e status das suas orientações." />
+            </VBox>
+
+            <!-- KPI Cards Grid (4 colunas p/ orientador) -->
+            <GridPane hgap="12.0" vgap="12.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints vgrow="SOMETIMES" />
+                </rowConstraints>
+
+                <!-- Pendentes -->
+                <VBox alignment="CENTER" GridPane.columnIndex="0" styleClass="kpi">
+                    <Label text="Pendentes" />
+                    <Label styleClass="title" text="0" />
                 </VBox>
-                <VBox GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="kpi-card">
-                    <Label text="0" styleClass="kpi-value"/>
-                    <Label text="Hoje" styleClass="kpi-label"/>
+
+                <!-- Para Hoje -->
+                <VBox alignment="CENTER" GridPane.columnIndex="1" styleClass="kpi">
+                    <Label text="Hoje" />
+                    <Label styleClass="title" text="0" />
                 </VBox>
-                <VBox GridPane.rowIndex="0" GridPane.columnIndex="2" styleClass="kpi-card">
-                    <Label text="0" styleClass="kpi-value"/>
-                    <Label text="Atrasados" styleClass="kpi-label"/>
+
+                <!-- Atrasados -->
+                <VBox alignment="CENTER" GridPane.columnIndex="2" styleClass="kpi">
+                    <Label text="Atrasados" />
+                    <Label styleClass="title" text="0" />
                 </VBox>
-                <VBox GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="kpi-card">
-                    <Label text="0" styleClass="kpi-value"/>
-                    <Label text="Prazo" styleClass="kpi-label"/>
+
+                <!-- Próximos prazos -->
+                <VBox alignment="CENTER" GridPane.columnIndex="3" styleClass="kpi">
+                    <Label text="Prazo" />
+                    <Label styleClass="title" text="0" />
                 </VBox>
             </GridPane>
         </VBox>
-    </center>
-    <bottom>
-        <!-- Footer will go here -->
-        <HBox styleClass="footer-container" alignment="CENTER" padding="10">
-            <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
-        </HBox>
-    </bottom>
-</BorderPane>
+    </HBox>
+
+    <!-- Footer -->
+    <HBox alignment="CENTER" spacing="12.0" styleClass="footer">
+        <padding>
+            <Insets top="12.0" right="12.0" bottom="12.0" left="16.0" />
+        </padding>
+        <Label styleClass="subtle" text="Wireframe API 2025-2" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Label styleClass="subtle" text="Módulo Orientador" />
+    </HBox>
+</VBox>

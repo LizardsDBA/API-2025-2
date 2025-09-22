@@ -20,7 +20,7 @@ public class LoginController {
     
     @FXML
     public void goOrientador() { 
-        SceneManager.go("orientador/VisaoGeral.fxml"); 
+        SceneManager.go("orientador/VisaoGeral.fxml");
     }
     
     @FXML

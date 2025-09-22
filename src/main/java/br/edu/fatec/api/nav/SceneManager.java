@@ -5,6 +5,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public final class SceneManager {
   private static Stage stage;
   private static double width, height;
@@ -15,9 +17,9 @@ public final class SceneManager {
   }
   public static void go(String fxmlPath){
     try{
-      Parent root = FXMLLoader.load(SceneManager.class.getResource("/views/" + fxmlPath));
+      Parent root = FXMLLoader.load(Objects.requireNonNull(SceneManager.class.getResource("/views/" + fxmlPath)));
       Scene scene = new Scene(root, width, height);
-      if(css != null) scene.getStylesheets().add(SceneManager.class.getResource(css).toExternalForm());
+      if(css != null) scene.getStylesheets().add(Objects.requireNonNull(SceneManager.class.getResource(css)).toExternalForm());
       stage.setScene(scene);
     }catch(Exception e){
       throw new RuntimeException("Falha ao abrir FXML: " + fxmlPath, e);
