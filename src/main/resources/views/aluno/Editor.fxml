@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.EditorAlunoController" spacing="12" style="-fx-padding: 12">
-  <Label text="Aluno — Editor Markdown" styleClass="title"/>
-  <SplitPane dividerPositions="0.5">
-    <TextArea fx:id="txtMarkdown" promptText="# Markdown aqui"/>
-    <ScrollPane fitToWidth="true"><Label text="(Preview)"/></ScrollPane>
-  </SplitPane>
-  <HBox spacing="8">
-    <Button text="Salvar" styleClass="btn btn-primary" onAction="#salvar"/>
-    <Button text="Enviar para revisão" styleClass="btn" onAction="#enviar"/>
-    <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
-  </HBox>
-</VBox>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+
+<GridPane fx:controller="com.example.alunoeditor.AlunoEditorController" stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <!-- Header (Row 0, Col 0-1) -->
+    <HBox fx:id="header" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="header" alignment="CENTER_LEFT" spacing="10">
+        <ImageView fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true" styleClass="logo"/>
+        <Label text="API/TG" styleClass="app-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Home" styleClass="nav-button"/>
+        <Button text="Sair" styleClass="nav-button"/>
+    </HBox>
+
+    <!-- Sidebar (Row 1, Col 0) -->
+    <VBox fx:id="sidebar" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="sidebar" spacing="10" alignment="TOP_CENTER">
+        <ImageView fitHeight="80" fitWidth="80" pickOnBounds="true" preserveRatio="true" styleClass="profile-image"/>
+        <Label text="Nome do Aluno" styleClass="profile-name"/>
+        <Button text="Meu Perfil" styleClass="sidebar-button" maxWidth="Infinity"/>
+        <Button text="Meus Projetos" styleClass="sidebar-button" maxWidth="Infinity"/>
+        <Button text="Configurações" styleClass="sidebar-button" maxWidth="Infinity"/>
+    </VBox>
+
+    <!-- Main Content (Row 1, Col 1) -->
+    <VBox fx:id="mainContent" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="main-content" spacing="10">
+        <Label text="Título do Projeto" styleClass="content-title"/>
+        <Label text="Home > Meus Projetos > Título do Projeto" styleClass="breadcrumbs"/>
+        <HBox spacing="10" VBox.vgrow="ALWAYS">
+            <VBox HBox.hgrow="ALWAYS" spacing="5">
+                <HBox styleClass="markdown-toolbar" alignment="CENTER_LEFT" spacing="5">
+                    <Button text="B" styleClass="toolbar-button"/>
+                    <Button text="I" styleClass="toolbar-button"/>
+                    <Button text="U" styleClass="toolbar-button"/>
+                    <Button text="H1" styleClass="toolbar-button"/>
+                    <Button text="Link" styleClass="toolbar-button"/>
+                </HBox>
+                <TextArea fx:id="markdownEditor" promptText="Escreva seu conteúdo aqui..." VBox.vgrow="ALWAYS" styleClass="markdown-editor"/>
+            </VBox>
+            <ScrollPane HBox.hgrow="NEVER" fitToWidth="true" styleClass="comments-scroll-pane">
+                <VBox fx:id="commentsSection" spacing="10" styleClass="comments-section"/>
+            </ScrollPane>
+        </HBox>
+    </VBox>
+
+    <!-- Footer (Row 2, Col 0-1) -->
+    <HBox fx:id="footer" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="footer" alignment="CENTER">
+        <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+    </HBox>
+</GridPane>

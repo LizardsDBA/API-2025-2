@@ -1,8 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.NotificacoesOrientadorController" spacing="12" style="-fx-padding: 12">
-  <Label text="Orientador — Notificações" styleClass="title"/>
-  <ListView prefHeight="480"/>
-  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
-</VBox>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane fx:controller="com.example.OrientadorNotificacoesController" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header">
+            <ImageView fitHeight="50" fitWidth="50">
+                <image>
+                    <Image url="/images/logo_apitg.png" /> <!-- Placeholder for logo -->
+                </image>
+            </ImageView>
+            <Label text="API/TG" styleClass="header-title"/>
+            <HBox HBox.hgrow="ALWAYS" alignment="CENTER_RIGHT" spacing="10">
+                <Button text="Home" styleClass="header-button"/>
+                <Button text="Sair" styleClass="header-button"/>
+            </HBox>
+        </HBox>
+    </top>
+    <left>
+        <VBox spacing="10" styleClass="sidebar">
+            <Label text="Navegação" styleClass="sidebar-title"/>
+            <Button text="Meu Perfil" styleClass="sidebar-button"/>
+            <Button text="Meus TGs" styleClass="sidebar-button"/>
+            <Button text="Notificações" styleClass="sidebar-button"/>
+            <Button text="Configurações" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+    <center>
+        <VBox spacing="10" styleClass="main-content">
+            <Label text="Notificações" styleClass="content-title"/>
+            <HBox spacing="5" styleClass="breadcrumbs">
+                <Label text="Home" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Notificações" styleClass="breadcrumb-item-active"/>
+            </HBox>
+            <TableView fx:id="notificationsTable" VBox.vgrow="ALWAYS" styleClass="notifications-table">
+                <columns>
+                    <TableColumn text="Quando" styleClass="table-column">
+                        <cellValueFactory><PropertyValueFactory property="quando"/></cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Aluno" styleClass="table-column">
+                        <cellValueFactory><PropertyValueFactory property="aluno"/></cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Versão" styleClass="table-column">
+                        <cellValueFactory><PropertyValueFactory property="versao"/></cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Mensagem" styleClass="table-column">
+                        <cellValueFactory><PropertyValueFactory property="mensagem"/></cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" styleClass="footer">
+            <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,14 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.ChatOrientadorController" style="-fx-padding: 12">
-  <top><Label text="Orientador — Chat" styleClass="title"/></top>
-  <center><ListView/></center>
-  <bottom>
-    <HBox spacing="8">
-      <TextField promptText="Digite uma mensagem" HBox.hgrow="ALWAYS"/>
-      <Button text="Enviar" styleClass="btn"/>
-      <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
+<GridPane fx:controller="OrientadorChatController" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/> <!-- Header -->
+        <RowConstraints percentHeight="80"/> <!-- Content -->
+        <RowConstraints percentHeight="10"/> <!-- Footer -->
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20"/> <!-- Sidebar -->
+        <ColumnConstraints percentWidth="80"/> <!-- Main Content -->
+    </columnConstraints>
+    <!-- Header (Row 0) -->
+    <HBox GridPane.rowIndex="0" styleClass="header" alignment="CENTER_LEFT" spacing="10">
+        <ImageView fitHeight="40" fitWidth="40" preserveRatio="true" styleClass="logo"/>
+        <Label text="API/TG" styleClass="app-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Home" styleClass="nav-button"/>
+        <Button text="Sair" styleClass="nav-button"/>
     </HBox>
-  </bottom>
-</BorderPane>
+
+    <!-- Sidebar (Row 1, Column 0) -->
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="sidebar" spacing="10" padding="10">
+        <Label text="Meu Perfil" styleClass="sidebar-title"/>
+        <ListView styleClass="sidebar-nav" VBox.vgrow="ALWAYS"/>
+    </VBox>
+
+    <!-- Main Content (Row 1, Column 1) -->
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="main-content" spacing="10" padding="10">
+        <Label text="Orientador Chat" styleClass="content-title"/>
+        <HBox styleClass="breadcrumbs">
+            <Label text="Home" styleClass="breadcrumb-item"/>
+            <Label text=">" styleClass="breadcrumb-separator"/>
+            <Label text="Chat" styleClass="breadcrumb-item"/>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <!-- Lista de Alunos Lateral -->
+            <VBox styleClass="student-list-container" prefWidth="200">
+                <Label text="Alunos" styleClass="student-list-title"/>
+                <ListView styleClass="student-list" VBox.vgrow="ALWAYS"/>
+            </VBox>
+            <!-- Área de Conversa Principal -->
+            <VBox styleClass="chat-area" HBox.hgrow="ALWAYS">
+                <Label text="Conversa com [Nome do Aluno]" styleClass="chat-header"/>
+                <ScrollPane VBox.vgrow="ALWAYS" styleClass="chat-scroll-pane">
+                    <VBox fx:id="messageContainer" styleClass="message-container"/>
+                </ScrollPane>
+                <HBox styleClass="message-input-container" spacing="5">
+                    <TextField HBox.hgrow="ALWAYS" promptText="Digite sua mensagem..." styleClass="message-input"/>
+                    <Button text="Enviar" styleClass="send-button"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </VBox>
+
+    <!-- Footer (Row 2) -->
+    <HBox GridPane.rowIndex="2" styleClass="footer" alignment="CENTER" padding="10">
+        <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+    </HBox>
+</GridPane>

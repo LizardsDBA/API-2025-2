@@ -1,15 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.VisaoGeralOrientadorController" spacing="12" style="-fx-padding: 12">
-  <Label text="Orientador — Visão Geral" styleClass="title"/>
-  <HBox spacing="12">
-    <StackPane styleClass="card kpi"><Label text="Alunos — 8"/></StackPane>
-    <StackPane styleClass="card kpi"><Label text="Pendências — 5"/></StackPane>
-    <StackPane styleClass="card kpi"><Label text="Novas versões — 2"/></StackPane>
-  </HBox>
-  <HBox spacing="8">
-    <Button text="Painel de Pendências" styleClass="btn" onAction="#goPainel"/>
-    <Button text="Notificações" styleClass="btn" onAction="#goNotificacoes"/>
-  </HBox>
-</VBox>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+
+<BorderPane fx:controller="com.example.OrientadorVisaoGeralController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <top>
+        <!-- Header will go here -->
+        <HBox styleClass="header-container" alignment="CENTER_LEFT" spacing="10">
+            <ImageView fitHeight="50" fitWidth="50" preserveRatio="true" styleClass="logo-image"/>
+            <Label text="API/TG" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Home" styleClass="nav-button"/>
+            <Button text="Sair" styleClass="nav-button"/>
+        </HBox>
+    </top>
+    <left>
+        <!-- Sidebar will go here -->
+        <VBox styleClass="sidebar-container" spacing="10" alignment="TOP_CENTER">
+            <Label text="Perfil" styleClass="sidebar-title"/>
+            <Button text="Meus Dados" styleClass="sidebar-button"/>
+            <Button text="Minhas Orientações" styleClass="sidebar-button"/>
+            <Button text="Configurações" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+    <center>
+        <!-- Main content will go here -->
+        <VBox styleClass="main-content-container" spacing="20" padding="20">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Visão Geral do Orientador" styleClass="page-title"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label text="Home > Orientador > Visão Geral" styleClass="breadcrumbs"/>
+            </HBox>
+            <GridPane hgap="20" vgap="20" alignment="CENTER">
+                <VBox GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="kpi-card">
+                    <Label text="0" styleClass="kpi-value"/>
+                    <Label text="Pendentes" styleClass="kpi-label"/>
+                </VBox>
+                <VBox GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="kpi-card">
+                    <Label text="0" styleClass="kpi-value"/>
+                    <Label text="Hoje" styleClass="kpi-label"/>
+                </VBox>
+                <VBox GridPane.rowIndex="0" GridPane.columnIndex="2" styleClass="kpi-card">
+                    <Label text="0" styleClass="kpi-value"/>
+                    <Label text="Atrasados" styleClass="kpi-label"/>
+                </VBox>
+                <VBox GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="kpi-card">
+                    <Label text="0" styleClass="kpi-value"/>
+                    <Label text="Prazo" styleClass="kpi-label"/>
+                </VBox>
+            </GridPane>
+        </VBox>
+    </center>
+    <bottom>
+        <!-- Footer will go here -->
+        <HBox styleClass="footer-container" alignment="CENTER" padding="10">
+            <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+</BorderPane>

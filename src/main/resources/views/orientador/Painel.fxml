@@ -1,21 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.orientador.PainelOrientadorController" spacing="12" style="-fx-padding: 12">
-  <Label text="Orientador — Painel de Pendências" styleClass="title"/>
-  <TableView fx:id="tblPendencias" prefHeight="420" styleClass="card">
-    <columns>
-      <TableColumn text="Aluno" prefWidth="160"/>
-      <TableColumn text="Seção" prefWidth="160"/>
-      <TableColumn text="Versão" prefWidth="80"/>
-      <TableColumn text="Pedido" prefWidth="280"/>
-      <TableColumn text="Prioridade" prefWidth="120"/>
-      <TableColumn text="Ações" prefWidth="180"/>
-    </columns>
-  </TableView>
-  <HBox spacing="8">
-    <Button text="Abrir Editor" styleClass="btn" onAction="#abrirEditor"/>
-    <Button text="Abrir Chat" styleClass="btn" onAction="#abrirChat"/>
-    <Button text="Voltar" styleClass="btn" onAction="#goVisaoGeral"/>
-  </HBox>
-</VBox>
+<BorderPane fx:controller="com.example.OrientadorPainelPendenciasController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21.0.1">
+    <top>
+<HBox alignment="CENTER_LEFT" spacing="10" styleClass="header">
+            <ImageView fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true" styleClass="logo"/>
+            <Label text="API/TG" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Home" styleClass="header-button"/>
+            <Button text="Sair" styleClass="header-button"/>
+        </HBox>
+    </top>
+    <left>
+<VBox spacing="10" styleClass="sidebar">
+            <Label text="Perfil do Orientador" styleClass="sidebar-title"/>
+            <Button text="Meus Alunos" styleClass="sidebar-button"/>
+            <Button text="Minhas Orientações" styleClass="sidebar-button"/>
+            <Button text="Configurações" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+    <center>
+<VBox spacing="10" styleClass="main-content">
+            <Label text="Painel do Orientador" styleClass="content-title"/>
+            <HBox spacing="5" styleClass="breadcrumbs">
+                <Label text="Home" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Orientador" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Pendências" styleClass="breadcrumb-item-active"/>
+            </HBox>
+            <Label text="Tabela de Pendências" styleClass="section-title"/>
+            <TableView styleClass="pendencias-table">
+                <columns>
+                    <TableColumn text="Aluno" styleClass="table-column"/>
+                    <TableColumn text="Versão" styleClass="table-column"/>
+                    <TableColumn text="Pedido" styleClass="table-column"/>
+                    <TableColumn text="Prioridade" styleClass="table-column"/>
+                    <TableColumn text="Ações" styleClass="table-column"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    <bottom>
+<HBox alignment="CENTER" styleClass="footer">
+            <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+</BorderPane>

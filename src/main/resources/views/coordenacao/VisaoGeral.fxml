@@ -1,15 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.coordenacao.VisaoGeralCoordController" spacing="12" style="-fx-padding: 12">
-  <Label text="Coordenação — Visão Geral" styleClass="title"/>
-  <HBox spacing="12">
-    <StackPane styleClass="card kpi"><Label text="Orientações ativas — 12"/></StackPane>
-    <StackPane styleClass="card kpi"><Label text="Portfólios finalizados — 3"/></StackPane>
-    <StackPane styleClass="card kpi"><Label text="Pendências — 4"/></StackPane>
-  </HBox>
-  <HBox spacing="8">
-    <Button text="Mapa de Orientação" styleClass="btn" onAction="#goMapa"/>
-    <Button text="Andamento" styleClass="btn" onAction="#goAndamento"/>
-  </HBox>
-</VBox>
+<GridPane fx:controller="com.example.CoordenadorVisaoGeralController" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" stylesheets="@style.css">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="600.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES" minHeight="50.0" prefHeight="50.0" />
+        <RowConstraints vgrow="SOMETIMES" minHeight="10.0" prefHeight="500.0" />
+        <RowConstraints vgrow="SOMETIMES" minHeight="30.0" prefHeight="30.0" />
+    </rowConstraints>
+
+    <!-- Header (Row 0, Column 0-1) -->
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" styleClass="header" alignment="CENTER_LEFT" spacing="10">
+        <ImageView fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+            <!-- Placeholder for logo image -->
+            <image>
+                <Image url="@../images/logo_apitg.png" />
+            </image>
+        </ImageView>
+        <Label text="API/TG" styleClass="app-title" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button text="Home" styleClass="button-home" />
+        <Button text="Sair" styleClass="button-sair" />
+    </HBox>
+
+    <!-- Sidebar (Column 0, Row 1) -->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="sidebar" alignment="TOP_CENTER" spacing="15">
+        <Label text="Nome do Coordenador" styleClass="profile-name" />
+        <Separator styleClass="sidebar-separator" />
+        <Button text="Visão Geral" styleClass="nav-button" />
+        <Button text="Gerenciar Cursos" styleClass="nav-button" />
+        <Button text="Gerenciar Alunos" styleClass="nav-button" />
+        <Button text="Gerenciar Orientadores" styleClass="nav-button" />
+        <Button text="Configurações" styleClass="nav-button" />
+    </VBox>
+
+    <!-- Main Content (Column 1, Row 1) -->
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="main-content" spacing="20" padding="20">
+        <Label text="Visão Geral do Coordenador" styleClass="content-title" />
+        <HBox styleClass="breadcrumbs" spacing="5">
+            <Label text="Home" styleClass="breadcrumb-item" />
+            <Label text=">" styleClass="breadcrumb-separator" />
+            <Label text="Coordenador" styleClass="breadcrumb-item" />
+            <Label text=">" styleClass="breadcrumb-separator" />
+            <Label text="Visão Geral" styleClass="breadcrumb-item active" />
+        </HBox>
+        <HBox styleClass="kpi-container" spacing="30">
+            <VBox styleClass="kpi-card">
+                <Label text="Cursos" styleClass="kpi-label" />
+                <Label text="15" styleClass="kpi-value" />
+            </VBox>
+            <VBox styleClass="kpi-card">
+                <Label text="Alunos" styleClass="kpi-label" />
+                <Label text="250" styleClass="kpi-value" />
+            </VBox>
+            <VBox styleClass="kpi-card">
+                <Label text="Orientadores" styleClass="kpi-label" />
+                <Label text="10" styleClass="kpi-value" />
+            </VBox>
+        </HBox>
+    </VBox>
+
+    <!-- Footer (Row 2, Column 0-1) -->
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2" styleClass="footer" alignment="CENTER">
+        <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text" />
+    </HBox>
+
+</GridPane>

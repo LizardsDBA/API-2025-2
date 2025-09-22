@@ -1,18 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.InboxAlunoController" spacing="12" style="-fx-padding: 12">
-  <Label text="Aluno — Inbox" styleClass="title"/>
-  <TableView fx:id="tblMensagens" prefHeight="420" styleClass="card">
-    <columns>
-      <TableColumn text="Seção" prefWidth="160"/>
-      <TableColumn text="Versão" prefWidth="80"/>
-      <TableColumn text="Mensagem" prefWidth="520"/>
-      <TableColumn text="Status" prefWidth="120"/>
-    </columns>
-  </TableView>
-  <HBox spacing="8">
-    <Button text="Abrir Editor" styleClass="btn" onAction="#goEditor"/>
-    <Button text="Voltar" styleClass="btn" onAction="#goDashboard"/>
-  </HBox>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.InboxAlunoController" 
+      spacing="0">
+   
+   <!-- Header -->
+   <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="header">
+      <padding>
+         <Insets bottom="10.0" left="16.0" right="16.0" top="10.0" />
+      </padding>
+      <Label styleClass="logo" text="API/TG" />
+      <Region HBox.hgrow="ALWAYS" />
+      <Button onAction="#goHome" text="Home" />
+      <Button onAction="#logout" text="Sair" />
+   </HBox>
+   
+   <!-- Main Layout with Sidebar -->
+   <HBox VBox.vgrow="ALWAYS" spacing="16.0">
+      <padding>
+         <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+      </padding>
+      
+      <!-- Sidebar -->
+      <VBox prefWidth="240.0" spacing="8.0" styleClass="sidebar">
+         <Label styleClass="sidebar-title" text="Aluno" />
+         <Label styleClass="sidebar-group" text="GERAL" />
+         <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#goDashboard" 
+                 styleClass="sidebar-link" text="Dashboard" />
+         <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#goInbox" 
+                 styleClass="sidebar-link" text="Inbox" />
+         <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#goEditor" 
+                 styleClass="sidebar-link" text="Markdown (Editor e Feedback)" />
+         <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#goComparar" 
+                 styleClass="sidebar-link" text="Comparar Versões" />
+         <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#goConclusao" 
+                 styleClass="sidebar-link" text="% Conclusão" />
+         <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#goHistorico" 
+                 styleClass="sidebar-link" text="Histórico" />
+      </VBox>
+      
+      <!-- Main Content -->
+      <VBox HBox.hgrow="ALWAYS" spacing="16.0" styleClass="card">
+         
+         <!-- Breadcrumbs -->
+         <Label styleClass="subtle" text="Aluno / Inbox" />
+         
+         <!-- Page Title -->
+         <VBox spacing="6.0">
+            <Label styleClass="title" text="Inbox" />
+            <Label styleClass="subtitle" text="Mensagens e solicitações do seu orientador." />
+         </VBox>
+         
+         <!-- Content Grid -->
+         <GridPane hgap="12.0" vgap="12.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" percentWidth="40" />
+               <ColumnConstraints hgrow="ALWAYS" percentWidth="60" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints vgrow="ALWAYS" />
+            </rowConstraints>
+            
+            <!-- Left Column - Conversations List -->
+            <VBox GridPane.columnIndex="0" spacing="8.0">
+               <Label styleClass="subtitle" text="Conversas" />
+               
+               <!-- Conversation Items -->
+               <VBox spacing="8.0">
+                  <!-- Conversation 1 -->
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: white; -fx-border-color: #d6d6d6; -fx-border-width: 1px; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+                     <VBox HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-weight: bold;" text="v1.4 Comentários (novo)" />
+                     </VBox>
+                     <Button text="abrir" />
+                  </HBox>
+                  
+                  <!-- Conversation 2 -->
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: white; -fx-border-color: #d6d6d6; -fx-border-width: 1px; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+                     <VBox HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-weight: bold;" text="v1.3 Normas ABNT" />
+                     </VBox>
+                     <Button text="abrir" />
+                  </HBox>
+                  
+                  <!-- Conversation 3 -->
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: white; -fx-border-color: #d6d6d6; -fx-border-width: 1px; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+                     <VBox HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-weight: bold;" text="v1.2 Introdução" />
+                     </VBox>
+                     <Button text="abrir" />
+                  </HBox>
+               </VBox>
+            </VBox>
+            
+            <!-- Right Column - Preview Area -->
+            <VBox GridPane.columnIndex="1" spacing="8.0">
+               <Label styleClass="subtitle" text="Prévia da Conversa" />
+               
+               <!-- Preview Card -->
+               <VBox alignment="CENTER" styleClass="card" prefHeight="220.0">
+                  <Label styleClass="subtle" text="Selecione uma conversa para ver os detalhes" />
+               </VBox>
+            </VBox>
+         </GridPane>
+      </VBox>
+   </HBox>
+   
+   <!-- Footer -->
+   <HBox alignment="CENTER" spacing="12.0" styleClass="footer">
+      <padding>
+         <Insets bottom="12.0" left="16.0" right="12.0" top="12.0" />
+      </padding>
+      <Label styleClass="subtle" text="Wireframe API 2025-2" />
+      <Region HBox.hgrow="ALWAYS" />
+      <Label styleClass="subtle" text="Grupo LizzardsDBA" />
+   </HBox>
 </VBox>

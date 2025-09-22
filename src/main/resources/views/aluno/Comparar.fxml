@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.CompararAlunoController" spacing="12" style="-fx-padding: 12">
-  <Label text="Aluno — Comparar versões" styleClass="title"/>
-  <HBox spacing="8">
-    <ComboBox promptText="Versão A"/>
-    <ComboBox promptText="Versão B"/>
-  </HBox>
-  <SplitPane dividerPositions="0.5">
-    <ScrollPane fitToWidth="true"><Label text="Texto A"/></ScrollPane>
-    <ScrollPane fitToWidth="true"><Label text="Texto B"/></ScrollPane>
-  </SplitPane>
-  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
-</VBox>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+
+<BorderPane fx:controller="controllers.AlunoCompararController" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@style.css">
+    <top>
+<HBox styleClass="header">
+            <Label text="API/TG Logo" styleClass="logo"/>
+            <HBox HBox.hgrow="ALWAYS" alignment="CENTER_RIGHT">
+                <Button text="Home" styleClass="button-home"/>
+                <Button text="Sair" styleClass="button-sair"/>
+            </HBox>
+        </HBox>
+    </top>
+    <left>
+<VBox styleClass="sidebar">
+            <Button text="Perfil" styleClass="button-sidebar"/>
+            <Button text="Meus Trabalhos" styleClass="button-sidebar"/>
+            <Button text="Comparar" styleClass="button-sidebar-active"/>
+            <Button text="Configurações" styleClass="button-sidebar"/>
+        </VBox>
+    </left>
+    <center>
+<VBox styleClass="main-content">
+            <HBox styleClass="breadcrumbs">
+                <Label text="Home" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Aluno" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Comparar" styleClass="breadcrumb-item-active"/>
+            </HBox>
+            <Label text="Comparar Versões do Trabalho" styleClass="content-title"/>
+            <GridPane styleClass="comparison-grid">
+                <VBox GridPane.columnIndex="0" styleClass="version-column">
+                    <Label text="Versão 1" styleClass="version-title"/>
+                    <ScrollPane styleClass="version-scroll-pane">
+                        <VBox styleClass="version-content">
+                            <Label text="Conteúdo da Versão 1..."/>
+                        </VBox>
+                    </ScrollPane>
+                </VBox>
+                <VBox GridPane.columnIndex="1" styleClass="version-column">
+                    <Label text="Versão 2" styleClass="version-title"/>
+                    <ScrollPane styleClass="version-scroll-pane">
+                        <VBox styleClass="version-content">
+                            <Label text="Conteúdo da Versão 2..."/>
+                        </VBox>
+                    </ScrollPane>
+                </VBox>
+            </GridPane>
+            <HBox styleClass="similarity-bar-container">
+                <Label text="Similaridade:" styleClass="similarity-label"/>
+                <ProgressBar progress="0.75" styleClass="similarity-progress-bar"/>
+                <Label text="75%" styleClass="similarity-percentage"/>
+            </HBox>
+        </VBox>
+    </center>
+    <bottom>
+<HBox styleClass="footer">
+            <Label text="Projeto API/TG - Todos os direitos reservados." styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.coordenacao.AndamentoCoordController" spacing="12" style="-fx-padding: 12">
-  <Label text="Coordenação — Andamento" styleClass="title"/>
-  <TableView prefHeight="480" styleClass="card">
-    <columns>
-      <TableColumn text="Aluno" prefWidth="240"/>
-      <TableColumn text="Seção" prefWidth="240"/>
-      <TableColumn text="%" prefWidth="80"/>
-      <TableColumn text="Status" prefWidth="200"/>
-    </columns>
-  </TableView>
-  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
-</VBox>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CoordenadorAndamentoController">
+    <top>
+        <fx:include source="header.fxml"/>
+    </top>
+    <left>
+        <fx:include source="sidebar.fxml"/>
+    </left>
+    <center>
+        <VBox styleClass="content-area" spacing="20">
+            <Label text="Andamento dos Times" styleClass="title"/>
+            <HBox styleClass="breadcrumb">
+                <Label text="Home >"/>
+                <Label text="Coordenador >"/>
+                <Label text="Andamento"/>
+            </HBox>
+            <GridPane hgap="20" vgap="20">
+                <children>
+                    <VBox styleClass="kpi-card" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <Label text="Times em Andamento" styleClass="kpi-title"/>
+                        <Label text="8" styleClass="kpi-value"/>
+                    </VBox>
+                    <VBox styleClass="kpi-card" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <Label text="Projetos Concluídos" styleClass="kpi-title"/>
+                        <Label text="12" styleClass="kpi-value"/>
+                    </VBox>
+                    <VBox styleClass="kpi-card" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                        <Label text="Média de Entregas/Semana" styleClass="kpi-title"/>
+                        <Label text="3.5" styleClass="kpi-value"/>
+                    </VBox>
+                    <VBox styleClass="kpi-card" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                        <Label text="Impedimentos Atuais" styleClass="kpi-title"/>
+                        <Label text="2" styleClass="kpi-value"/>
+                    </VBox>
+
+                    <VBox styleClass="chart-area" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <Label text="Progresso Geral dos Times" styleClass="chart-title"/>
+                        <!-- Gráfico de progresso aqui -->
+                    </VBox>
+                    <VBox styleClass="chart-area" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <Label text="Progresso Individual do Time" styleClass="chart-title"/>
+                        <!-- Gráfico de progresso aqui -->
+                    </VBox>
+                </children>
+            </GridPane>
+        </VBox>
+    </center>
+    <bottom>
+        <fx:include source="footer.fxml"/>
+    </bottom>
+</BorderPane>
+

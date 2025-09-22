@@ -1,15 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fxml PUBLIC "-//javafx.com//DTD FXML 1.0//EN" "http://javafx.com/fxml/1">
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.ConclusaoAlunoController" spacing="12" style="-fx-padding: 12">
-  <Label text="Aluno — % Conclusão" styleClass="title"/>
-  <TableView prefHeight="480" styleClass="card">
-    <columns>
-      <TableColumn text="Seção" prefWidth="240"/>
-      <TableColumn text="Status" prefWidth="180"/>
-      <TableColumn text="%" prefWidth="80"/>
-      <TableColumn text="Atualizado em" prefWidth="220"/>
-    </columns>
-  </TableView>
-  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
-</VBox>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:controller="com.example.AlunoConclusaoController" xmlns:fx="http://javafx.com/fxml/1" styleClass="root">
+    <top>
+        <!-- Header -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header">
+            <ImageView fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true" styleClass="logo"/>
+            <Label text="API/TG" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Home" styleClass="button-home"/>
+            <Button text="Sair" styleClass="button-sair"/>
+        </HBox>
+    </top>
+    <left>
+        <!-- Sidebar -->
+        <VBox spacing="10" styleClass="sidebar">
+            <Label text="Navegação do Perfil" styleClass="sidebar-title"/>
+            <Button text="Meu Perfil" styleClass="sidebar-button"/>
+            <Button text="Minhas Conclusões" styleClass="sidebar-button"/>
+            <Button text="Configurações" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+    <center>
+        <!-- Main Content -->
+        <VBox spacing="20" styleClass="main-content">
+            <Label text="Conclusão do Aluno" styleClass="content-title"/>
+            <HBox spacing="5" styleClass="breadcrumbs">
+                <Label text="Home" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Aluno" styleClass="breadcrumb-item"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Conclusão" styleClass="breadcrumb-item active"/>
+            </HBox>
+            
+            <!-- Tabela de Seções -->
+            <TableView styleClass="sections-table">
+                <columns>
+                    <TableColumn text="Seção" prefWidth="200" styleClass="table-column-section"/>
+                    <TableColumn text="Status" prefWidth="100" styleClass="table-column-status"/>
+                </columns>
+            </TableView>
+            
+            <!-- Barra de Progresso Global -->
+            <VBox spacing="5" styleClass="progress-bar-container">
+                <Label text="Progresso Global" styleClass="progress-bar-label"/>
+                <ProgressBar prefWidth="300" progress="0.75" styleClass="global-progress-bar"/>
+            </VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <!-- Footer -->
+        <HBox alignment="CENTER" styleClass="footer">
+            <Label text="© 2025 Projeto API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+</BorderPane>

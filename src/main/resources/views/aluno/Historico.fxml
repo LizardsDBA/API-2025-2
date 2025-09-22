@@ -1,15 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fatec.api.controller.aluno.HistoricoAlunoController" spacing="12" style="-fx-padding: 12">
-  <Label text="Aluno — Histórico" styleClass="title"/>
-  <TableView prefHeight="480" styleClass="card">
-    <columns>
-      <TableColumn text="Seção" prefWidth="240"/>
-      <TableColumn text="Versão" prefWidth="120"/>
-      <TableColumn text="Criado em" prefWidth="240"/>
-      <TableColumn text="Resumo" prefWidth="300"/>
-    </columns>
-  </TableView>
-  <Button text="Voltar" styleClass="btn" onAction="#voltar"/>
-</VBox>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane fx:controller="com.example.AlunoHistoricoController" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <!-- Header will go here -->
+        <HBox fx:id="header" styleClass="header">
+            <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@logo.png"/>
+                </image>
+            </ImageView>
+            <HBox HBox.hgrow="ALWAYS" alignment="CENTER_RIGHT" spacing="10">
+                <Button text="Home" styleClass="button-home"/>
+                <Button text="Sair" styleClass="button-sair"/>
+            </HBox>
+        </HBox>
+    </top>
+    <left>
+        <!-- Sidebar will go here -->
+        <VBox fx:id="sidebar" styleClass="sidebar" spacing="10">
+            <Label text="Navegação" styleClass="sidebar-title"/>
+            <Separator styleClass="sidebar-separator"/>
+            <Button text="Meu Perfil" styleClass="sidebar-button" maxWidth="Infinity"/>
+            <Button text="Histórico" styleClass="sidebar-button" maxWidth="Infinity"/>
+            <Button text="Configurações" styleClass="sidebar-button" maxWidth="Infinity"/>
+        </VBox>
+    </left>
+    <center>
+        <!-- Main content will go here -->
+        <VBox fx:id="mainContent" styleClass="main-content" spacing="15">
+            <Label text="Histórico do Aluno" styleClass="content-title"/>
+            <HBox styleClass="breadcrumbs" spacing="5">
+                <Hyperlink text="Home" styleClass="breadcrumb-link"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Hyperlink text="Aluno" styleClass="breadcrumb-link"/>
+                <Label text=">" styleClass="breadcrumb-separator"/>
+                <Label text="Histórico" styleClass="breadcrumb-current"/>
+            </HBox>
+            <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS" styleClass="timeline-scroll-pane">
+                <VBox fx:id="timelineArea" spacing="10" styleClass="timeline-area">
+                    <!-- Exemplo de item da timeline -->
+                    <TitledPane text="Versão 1.0 - 2023-01-15" expanded="false" styleClass="timeline-version-pane">
+                        <content>
+                            <VBox spacing="5" styleClass="timeline-version-content">
+                                <Label text="Descrição: Início do projeto." styleClass="timeline-description"/>
+                                <Label text="Autor: João Silva" styleClass="timeline-author"/>
+                                <Label text="Alterações: Criação inicial do documento de requisitos." styleClass="timeline-changes"/>
+                            </VBox>
+                        </content>
+                    </TitledPane>
+                    <TitledPane text="Versão 1.1 - 2023-03-20" expanded="false" styleClass="timeline-version-pane">
+                        <content>
+                            <VBox spacing="5" styleClass="timeline-version-content">
+                                <Label text="Descrição: Adição de novas funcionalidades." styleClass="timeline-description"/>
+                                <Label text="Autor: Maria Souza" styleClass="timeline-author"/>
+                                <Label text="Alterações: Implementação do módulo de login." styleClass="timeline-changes"/>
+                            </VBox>
+                        </content>
+                    </TitledPane>
+                    <!-- Mais itens da timeline podem ser adicionados aqui dinamicamente -->
+                </VBox>
+            </ScrollPane>
+        </VBox>
+    </center>
+    <footer>
+        <!-- Footer will go here -->
+        <HBox fx:id="footer" styleClass="footer" alignment="CENTER">
+            <Label text="© 2025 API/TG. Todos os direitos reservados." styleClass="footer-text"/>
+        </HBox>
+    </footer>
+</BorderPane>
