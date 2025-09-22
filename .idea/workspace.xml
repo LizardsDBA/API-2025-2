@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063f6b3e-795c-4853-aaf3-864ca5d7ca2f" name="Changes" comment="feat: estruturação completa do front end para as telas de alunos.">
+    <list default="true" id="063f6b3e-795c-4853-aaf3-864ca5d7ca2f" name="Changes" comment="feat: estruturação completa do front end para as telas do orientador.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/ChatOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/ChatOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/EditorOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/EditorOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/ImportarOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/ImportarOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/NotificacoesOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/NotificacoesOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/PainelOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/PainelOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/ParecerOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/ParecerOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/VisaoGeralOrientadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/orientador/VisaoGeralOrientadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Chat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Chat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Editor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Importar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Importar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Notificacoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Notificacoes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Painel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Painel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/Parecer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/Parecer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/orientador/VisaoGeral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/orientador/VisaoGeral.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/coordenacao/AndamentoCoordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/coordenacao/AndamentoCoordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/coordenacao/MapaCoordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/coordenacao/MapaCoordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/coordenacao/VisaoGeralCoordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/fatec/api/controller/coordenacao/VisaoGeralCoordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Andamento.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Andamento.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Mapa.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/coordenacao/Mapa.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/coordenacao/VisaoGeral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/coordenacao/VisaoGeral.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
       <workItem from="1758555759756" duration="30000" />
       <workItem from="1758555799463" duration="337000" />
       <workItem from="1758556741442" duration="199000" />
-      <workItem from="1758557096640" duration="16560000" />
+      <workItem from="1758557096640" duration="17378000" />
     </task>
     <task id="LOCAL-00001" summary="feat: continuação do front end">
       <option name="closed" value="true" />
@@ -116,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758579744083</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: estruturação completa do front end para as telas do orientador.">
+      <option name="closed" value="true" />
+      <created>1758582188835</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758582188835</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: continuação do front end" />
     <MESSAGE value="feat: estruturação completa do front end para as telas de alunos." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: estruturação completa do front end para as telas de alunos." />
+    <MESSAGE value="feat: estruturação completa do front end para as telas do orientador." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: estruturação completa do front end para as telas do orientador." />
   </component>
 </project>
