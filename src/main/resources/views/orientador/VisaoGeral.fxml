@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="br.edu.fatec.api.controller.orientador.VisaoGeralOrientadorController"
-      spacing="0">
+      spacing="0"
+      stylesheets="@/application.css">
 
     <!-- Header -->
     <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="header">
@@ -31,12 +32,13 @@
             <Label styleClass="sidebar-group" text="GERAL" />
 
             <!-- Links (mapeados às views do orientador) -->
-            <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
-                    onAction="#goHome" styleClass="sidebar-link" text="Visão Geral" />
+            <Button fx:id="btnVisaoGeral" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
+                    onAction="#goVisaoGeral" styleClass="sidebar-link" text="Visão Geral" />
             <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
                     onAction="#goPainel" styleClass="sidebar-link" text="Painel" />
             <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
                     onAction="#goNotificacoes" styleClass="sidebar-link" text="Notificações" />
+            <Label styleClass="sidebar-group" text="FERRAMENTAS" />
             <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
                     onAction="#goEditor" styleClass="sidebar-link" text="Editor (Feedback/Parecer)" />
             <Button alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308"
@@ -49,19 +51,23 @@
 
         <!-- Main Content -->
         <VBox HBox.hgrow="ALWAYS" spacing="16.0" styleClass="card">
+
+            <!-- Breadcrumbs (opcional) -->
+            <Label styleClass="subtle" text="Orientador / Visão Geral" />
+
             <!-- Page Title -->
             <VBox spacing="6.0">
                 <Label styleClass="title" text="Orientador — Visão Geral" />
                 <Label styleClass="subtitle" text="Atalhos e status das suas orientações." />
             </VBox>
 
-            <!-- KPI Cards Grid (4 colunas p/ orientador) -->
+            <!-- KPI Cards Grid (4 colunas) -->
             <GridPane hgap="12.0" vgap="12.0">
                 <columnConstraints>
-                    <ColumnConstraints hgrow="SOMETIMES" />
-                    <ColumnConstraints hgrow="SOMETIMES" />
-                    <ColumnConstraints hgrow="SOMETIMES" />
-                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
+                    <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
+                    <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
+                    <ColumnConstraints percentWidth="25" hgrow="ALWAYS" />
                 </columnConstraints>
                 <rowConstraints>
                     <RowConstraints vgrow="SOMETIMES" />
@@ -70,25 +76,25 @@
                 <!-- Pendentes -->
                 <VBox alignment="CENTER" GridPane.columnIndex="0" styleClass="kpi">
                     <Label text="Pendentes" />
-                    <Label styleClass="title" text="0" />
+                    <Label fx:id="lblPendentes" styleClass="title" text="0" />
                 </VBox>
 
                 <!-- Para Hoje -->
                 <VBox alignment="CENTER" GridPane.columnIndex="1" styleClass="kpi">
                     <Label text="Hoje" />
-                    <Label styleClass="title" text="0" />
+                    <Label fx:id="lblHoje" styleClass="title" text="0" />
                 </VBox>
 
                 <!-- Atrasados -->
                 <VBox alignment="CENTER" GridPane.columnIndex="2" styleClass="kpi">
                     <Label text="Atrasados" />
-                    <Label styleClass="title" text="0" />
+                    <Label fx:id="lblAtrasados" styleClass="title" text="0" />
                 </VBox>
 
                 <!-- Próximos prazos -->
                 <VBox alignment="CENTER" GridPane.columnIndex="3" styleClass="kpi">
                     <Label text="Prazo" />
-                    <Label styleClass="title" text="0" />
+                    <Label fx:id="lblPrazo" styleClass="title" text="0" />
                 </VBox>
             </GridPane>
         </VBox>
