@@ -11,7 +11,7 @@
   <a href ="#dod---definition-of-done">DoD</a>  |
   <a href ="#cronograma-de-sprints"> Cronograma de Sprints</a>  |
   <a href ="#tecnologias-utilizadas">Tecnologias</a> |
-  <a href ="#manual-de-instalação">Manual de Instalação</a> |
+  <a href ="#manual-de-instalação">Manual</a> |
   <a href ="#equipe"> Equipe</a> |
 </p>
 
@@ -65,7 +65,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 | 🔴 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 
 ## Tecnologias Utilizadas
-<h4 align="center">
+<h4 align="left">
 <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
 <a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/></a>&nbsp;
 <a href="https://www.notion.com"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>&nbsp;
