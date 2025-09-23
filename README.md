@@ -11,7 +11,7 @@
   <a href ="#dod---definition-of-done">DoD</a>  |
   <a href ="#cronograma-de-sprints"> Cronograma de Sprints</a>  |
   <a href ="#tecnologias-utilizadas">Tecnologias</a> |
-  <a href ="#manual-de-instalação">Manual de Instalação</a>  | 
+  <a href ="#manual-de-instalação">Manual de Instalação</a> |
   <a href ="#equipe"> Equipe</a> |
 </p>
 
@@ -61,9 +61,9 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 ## Cronograma de Sprints
 | Sprint          |    Período    | Documentação                                     |
 | --------------- | :-----------: | ------------------------------------------------ |
-| 🔖 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1 Docs](./docs/processo/sprints/sprint-1/README.md) |
-| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs](./docs/processo/sprints/sprint-2/README.md) |
-| 🔖 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3 Docs](./docs/processo/sprints/sprint-3/README.md) |
+| 🔴 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
+| 🔴 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
+
 ## Tecnologias Utilizadas
 <h4 align="center">
 <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
@@ -74,25 +74,14 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 <a href="https://www.atlassian.com/br/software/jira"><img src="https://img.shields.io/badge/Jira-0052CC.svg?style=for-the-badge&logo=jira&logoColor=white"/></a>
 </h4>
 
-## Estrutura do projeto
-
 ---
 
 ## Manual de Instalação
 
 ---
 
-## Como executar, usar e testar o projeto
-
-## Documentação
-
 ## Equipe
 
-<div align="left">
-<img src="assets/members.jpeg" alt="Equipe e funções" width="600px" />
-</div>
-<br>
-<div align="left">
   <table>
     <tr>
       <th>Membro</th>
@@ -111,7 +100,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
       <td>Scrum Master</td>
       <td><a href="https://github.com/oliveiraluizgustavo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>>
+    </tr>
       <td>Cauã Mohor</td>
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/CauaDK"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
@@ -136,7 +125,6 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
       <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
   </table>
-</div>
 
 
 ## Requisitos de Permanência
