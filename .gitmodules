@@ -1,0 +1,3 @@
+[submodule "tg-connect"]
+	path = tg-connect
+	url = https://github.com/LizardsDBA/tg-connect.git
