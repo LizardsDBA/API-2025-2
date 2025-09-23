@@ -1,4 +1,19 @@
 # API 2º Semestre BD
+# LizardsDBA - TG Connect
+<p align="center">
+      <img src="docs/assets/logo_lizards.jpeg" alt="logo LizardsDBA" width="200">
+</p>
+<p align="center">
+  | <a href ="#desafio"> Desafio</a>  |
+  <a href ="#solução"> Solução</a>  |   
+  <a href ="#backlog-do-produto"> Backlog do Produto</a>  |
+  <a href ="#dor---definition-of-ready">DoR</a>  |
+  <a href ="#dod---definition-of-done">DoD</a>  |
+  <a href ="#cronograma-de-sprints"> Cronograma de Sprints</a>  |
+  <a href ="#tecnologias-utilizadas">Tecnologias</a> |
+  <a href ="#manual-de-instalação">Manual de Instalação</a>  | 
+  <a href ="#equipe"> Equipe</a> |
+</p>
 
 ## Título do projeto
 #### Ciclo de Vida de TG da modalidade Portfólio
@@ -29,18 +44,20 @@
 * Design no **Figma**
 * A User Story foi validada e aprovada pelo **Product Owner**.
 * Não há dependências externas ou bloqueios impedindo o **início do trabalho**.
+* Wireframe completo
 
 ## DoD - Definition of Done
 * Manual de Usuário
-* Manual da Aplicação
+* Manual Técnico
 * Código completo
-* Vídeos de cada etapa de entrega
-## Evolução do Projeto
+* Funcionalidades operacionais
 
-## Sprints
+--- 
 
-## Tecnologias utilizadas
-<h4 align="left">
+## Cronograma de Sprints
+
+## Tecnologias Utilizadas
+<h4 align="center">
 <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
 <a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/></a>&nbsp;
 <a href="https://www.notion.com"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>&nbsp;
@@ -53,30 +70,9 @@
 
 ---
 
-## Estratégia de Branch
-
-**Modelo adotado: GitHub Flow (simplificado e adequado ao TG).**
-
-### `main` (protegida)
-- Sempre estável e demonstrável.  
-- Só recebe merge via **Pull Request aprovado** e com **build verde**.  
-
-### Branches de trabalho
-- `feat/*` → novas funcionalidades.  
-- `fix/*` → correções de bugs.  
-- `docs/*` → documentação (README, manuais, tutoriais).  
-- `chore/*` → ajustes de infraestrutura, dependências ou refactors leves.  
-- `hotfix/*` → correções urgentes diretamente relacionadas a releases.  
-
-### Pull Requests (PR)
-- **Obrigatório** para merge na `main`.  
-- Revisão por pelo menos **1 colega da equipe**.  
-- Deve conter:
-  - Breve descrição da entrega.  
-  - Checklist de testes manuais realizados.  
+## Manual de Instalação
 
 ---
-
 
 ## Como executar, usar e testar o projeto
 
