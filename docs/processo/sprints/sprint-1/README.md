@@ -41,7 +41,7 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
 
 :white_check_mark: Mockup da área de versões passadas (mesmo estático, sem lógica).
 
-#### Tela do Coordenador
+### Tela do Coordenador
 
 :white_check_mark: Mockup da listagem de alunos com respectivos orientadores.
 
@@ -125,6 +125,7 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_richard.jpeg" alt="Foto Richard" width="90"></td>
     </tr>
   </table>
+
 
 
 
