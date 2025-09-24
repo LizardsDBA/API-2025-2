@@ -101,8 +101,8 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
       <td>Luiz Gustavo</td>
       <td>Scrum Master</td>
       <td><a href="https://github.com/oliveiraluizgustavo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/luiz-gustavo-oliveira09/"><img src="docs/assets/pfp_luiz.jpeg" alt="Foto Luiz" width="90"></td>
+      <td><a href="https://www.linkedin.com/in/luiz-gustavo-oliveira09/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><img src="docs/assets/pfp_luiz.jpeg" alt="Foto Luiz" width="90"></td>
     </tr>
       <td>Cauã Mohor</td>
       <td>Desenvolvedor</td>
