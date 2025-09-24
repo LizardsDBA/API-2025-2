@@ -19,7 +19,7 @@
 #### Ciclo de Vida de TG da modalidade Portfólio
 
 ## Desafio
-O desafio consiste em criar uma plataforma web unificada para a orientação de Trabalhos de Graduação (TG) Portfólio. A aplicação deve centralizar a comunicação entre alunos e professores, fornecendo um histórico completo de feedbacks e versões do projeto. O objetivo é solucionar a ineficiência das ferramentas atuais, eliminando a perda de informações e a falta de rastreabilidade do processo de orientação, garantindo um fluxo de trabalho claro e eficiente para todos os envolvidos..
+O desafio consiste em criar uma aplicação desktop para a orientação de Trabalhos de Graduação (TG) Portfólio. A aplicação deve centralizar a comunicação entre alunos e professores, fornecendo um histórico completo de feedbacks e versões do projeto. O objetivo é solucionar a ineficiência das ferramentas atuais, eliminando a perda de informações e a falta de rastreabilidade do processo de orientação, garantindo um fluxo de trabalho claro e eficiente para todos os envolvidos..
 
 ## Solução
 TG Connect — Gestão Integrada de TG/Portfólio.
