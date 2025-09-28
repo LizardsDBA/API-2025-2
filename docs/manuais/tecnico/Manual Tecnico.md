@@ -34,3 +34,15 @@ src/main/java/br/edu/fatec/api/
 └── service/                  # Lógica de negócio
     └── UsuarioService.java
 ```
+
+## Como Instalar
+<ol>
+    <li>Clone o repositório:</li>
+</ol>
+<pre><code>git clone https://github.com/LizardsDBA/tg-connect</code></pre>
+<ol start="2">
+    <li>Abra o código-fonte na IDE de preferência.</li>
+    <li>Execute o projeto no botão "Run"</li>
+</ol>
+
+
