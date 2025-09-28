@@ -17,6 +17,9 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
 
 ## Burndown da Sprint 1 
 
+<td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/BurndownSprint01.png" width="600"></td>
+
+
 ## DoR - Definition of Ready - Sprint 1
 
 ### Requisitos gerais
@@ -125,6 +128,7 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_richard.jpeg" alt="Foto Richard" width="90"></td>
     </tr>
   </table>
+
 
 
 
