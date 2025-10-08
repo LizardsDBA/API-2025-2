@@ -11,13 +11,11 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
 ## Backlog da Sprint 2
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 2 | Alta | Como professor orientador, eu quero visualizar o andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 3 | Alta | Como professor da disciplina de TG, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 4 | Média | Como aluno, eu quero ter acesso a um histórico completo de todas as versões do meu TG, para que eu possa ver a evolução do meu projeto e as correções passadas.   | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 5 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 5 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 |  2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 6 | Média | Como professor orientador, eu quero poder dar feedback em um chat com o aluno, para que minhas correções sejam mais claras e específicas. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 7 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho.  | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 8 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 
 ## Burndown da Sprint 2
 
@@ -25,54 +23,31 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
 
 ### Requisitos gerais
 
- :white_check_mark: Critérios de aceitação objetivos.
-
- :white_check_mark: Escopo fechado (o que entra / não entra).
-
- :white_check_mark: Protótipo simples (wireframe/FXML rascunho) e campos definidos.
-
- :white_check_mark: Dependências mapeadas (telas, dados, pessoas).
-
- :white_check_mark: Estimativa feita e sem bloqueios para iniciar.
- 
- :white_check_mark: Critérios de aceitação revisados com o time/cliente.
-
- :white_check_mark: Como será demonstrado na review.
+|              Critério              | Descrição                                                                                          |
+| :--------------------------------: | -------------------------------------------------------------------------------------------------- |
+|        Clareza na Descrição        | A User Story está escrita no formato “Como [persona], quero [ação] para que [objetivo]”            |
+|  Critérios de Aceitação Definidos  | A história possui critérios objetivos que indicam o que é necessário para considerá-la concluída.  |
+|  Cenários de Teste Especificados   | A história tem pelo menos 1 cenário de teste estruturado (Dado, Quando, Então).                    |
+|            Independente            | A história pode ser implementada sem depender de outra tarefa da mesma Sprint.                     |
+|      Escopo Técnico Validado       | Há clareza se a história envolve frontend, backend ou ambos — com pontos de integração definidos.  |
+|             Estímável              | A história foi pontuada no Planning Poker ou tem uma estimativa clara.                             |
+|     Validação com PO e equipe      | A história foi discutida em refinamento ou planning e validada com o time dev.                     |
+| Alinhamento com arquitetura atual  | A funcionalidade proposta está coerente com o que já entregue na Sprint 1.                         |
 
 ## DoD - Definition of Done  – Sprint 2
 
-### Requisitos gerais
-
-•	Funcionalidades testadas pelo time/cliente.
-
-•	Escopo claro: todas as User Stories concluídas.
-
-### Tela de Login
-:white_check_mark: Campo de usuário e senha
-
-:white_check_mark: Botões para selecionar tipo de usuário
-
-### Tela do Orientador
-
-:white_check_mark: Abas: Visão Geral, Painel, Notificações, Editor, Parecer, Importar e Chat.
-
-:white_check_mark: Caixas de texto, botões e visualização dos itens concordados com o cliente.
-
-### Tela do Aluno
-
-:white_check_mark: Abas: Dashboard, Inbox, Mark Down, Comparar Versões, Conclusão e Histórico.
-
-:white_check_mark: Caixas de texto, botões e visualização dos itens concordados com o cliente.
-
-### Tela do Coordenador
-
-:white_check_mark: Abas: Visão Geral, Mapa de Orientação e Andamento Geral
-
-:white_check_mark: Caixas de texto, botões e visualização dos itens concordados com o cliente.
+|                 Critério                 | Descrição                                                                                                        |
+| :--------------------------------------: | ---------------------------------------------------------------------------------------------------------------- |
+|     Critérios de Aceitação atendidos     | Todos os critérios definidos na US foram implementados e validados com sucesso.                                  |
+| Cenários de Teste executados e aprovados | Todos os cenários descritos foram validados manualmente.                                                         |
+|      Código revisado (Code Review)       | A US passou por revisão antes da integração.                                                                     |
+|  Integrado com o restante da aplicação   | A funcionalidade foi testada junto com o fluxo completo do sistema (Ex: Envio → Correção → Feedback). |
+|         Validação final com o PO         | O PO testou e confirmou que a funcionalidade atende ao esperado.                                                 |
+|            Pronta para Deploy            | A funcionalidade pode ser entregue ao ambiente final sem pendências.                                             |
 
 ## Equipe
 
-  <table>
+ <table>
     <tr>
       <th>Membro</th>
       <th>Função</th>
@@ -93,6 +68,13 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
       <td><a href="https://github.com/oliveiraluizgustavo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/luiz-gustavo-oliveira09/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_luiz.jpeg" alt="Foto Luiz" width="90"></td>
+    </tr>
+      <tr>
+      <td>Benjamin Marques</td>
+      <td>Desenvolvedor</td>
+      <td><a href="https://github.com/maarquueess"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/benjamin-marques-48a4bb359"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_Benjamin.jpeg" alt="Foto Benjamin" width="90"></td>
     </tr>
       <td>Cauã Mohor</td>
       <td>Desenvolvedor</td>
@@ -115,6 +97,14 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_flavio.jpeg" alt="Foto Flavio" width="90"></td>
     </tr>
     <tr>
+      <tr>
+      <td>Matheus de Paula</td>
+      <td>Desenvolvedor</td>
+      <td><a href="https://github.com/MrMatheTrue"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_Matheus.jpeg" alt="Foto Matheus" width="90"></td>
+    </tr>
+      <tr>
       <td>Richard Rangel</td>
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/Richard-JV-Rangel"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
@@ -122,3 +112,6 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_richard.jpeg" alt="Foto Richard" width="90"></td>
     </tr>
   </table>
+
+  
+
