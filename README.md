@@ -62,7 +62,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 | Sprint          |    Período    | Documentação                                     |
 | --------------- | :-----------: | ------------------------------------------------ |
 | 🟢 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
-| 🔴 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
+| 🟡 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 
 ## Tecnologias Utilizadas
@@ -110,7 +110,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/maarquueess"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/benjamin-marques-48a4bb359"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-      <td><img src="" alt="Foto Benjamin" width="90"></td>
+      <td><img src="docs/assets/pfp_Benjamin.jpeg" alt="Foto Benjamin" width="90"></td>
     </tr>
       <td>Cauã Mohor</td>
       <td>Desenvolvedor</td>
@@ -138,7 +138,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/MrMatheTrue"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-      <td><img src="" alt="Foto Matheus" width="90"></td>
+      <td><img src="docs/assets/pfp_Matheus.jpeg" alt="Foto Matheus" width="90"></td>
     </tr>
       <tr>
       <td>Richard Rangel</td>
