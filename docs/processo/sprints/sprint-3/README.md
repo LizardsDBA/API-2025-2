@@ -1,22 +1,19 @@
 # API 2º Semestre BD
 # LizardsDBA - TG Connect
-# Documentação - Sprint 2
+# Documentação - Sprint 3
 <p align="center">
       <img src="/docs/assets/logo_lizards.jpeg" alt="logo LizardsDBA" width="200">
 
 ## Desafio 
 
-Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionalidades reais. Vamos projetar o backend as telas essenciais para o Orientador e Aluno, criando um sistema funcional.
 
-## Backlog da Sprint 2
+## Backlog da Sprint 3
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 4 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 5 | Alta | Como professor orientador, eu quero visualizar o andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 8 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 |  2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 9 | Média | Como professor orientador, eu quero poder dar feedback em um chat com o aluno, para que minhas correções sejam mais claras e específicas. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 10 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho.  | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 11 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 6 | Alta | Como coordenador, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 7 | Média | Como aluno, eu quero ter acesso a um histórico completo de todas as versões do meu TG, para que eu possa ver a evolução do meu projeto e as correções passadas. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 12 | Baixa | Como aluno, eu quero poder comparar diferentes versões do meu TG, para que eu possa ver as mudanças exatas que fiz ou as que o professor sugeriu. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 13 | Baixa | Como professor orientador, eu quero ter um histórico de todas as correções e feedbacks por aluno, para que eu possa acompanhar o progresso e não repetir comentários. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 
 ## Burndown da Sprint 2
 
