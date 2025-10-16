@@ -11,9 +11,9 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
 ## Backlog da Sprint 1
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Alta | Como orientador, eu quero uma tela para visualizar alunos e projetos orientados, para que eu possa gerenciar de uma forma mais eficiente. | 2 | 1 | :white_check_mark: |
-| 2 | Alta | Como Aluno, eu quero uma tela para visualizar o editor de MD e versões passadas, para que eu veja a evolução do projeto. | 2 | 1 | :white_check_mark: |
-| 3 | Alta | Como Coordenador, eu quero uma tela para visualizar quais alunos são orientados por quais professores, para que eu possa ter um controle maior sobre os TGs. | 3 | 1 | :white_check_mark: |
+| 1 | Alta | Como professor orientador, eu quero uma tela para visualizar alunos e projetos orientados, para que eu possa gerenciar de uma forma mais eficiente. | 2 | 1 | :white_check_mark: |
+| 2 | Alta | Como aluno, eu quero uma tela para visualizar o editor de MD e versões passadas, para que eu veja a evolução do projeto. | 2 | 1 | :white_check_mark: |
+| 3 | Alta | Como coordenador, eu quero uma tela para visualizar quais alunos são orientados por quais professores, para que eu possa ter um controle maior sobre os TGs. | 3 | 1 | :white_check_mark: |
 
 ## Burndown da Sprint 1 
 
@@ -128,6 +128,7 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_richard.jpeg" alt="Foto Richard" width="90"></td>
     </tr>
   </table>
+
 
 
 
