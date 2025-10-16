@@ -19,62 +19,69 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
 
 <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/BurndownSprint01.png" width="600"></td>
 
+## DoR - Definition of Ready – Sprint 1
 
-## DoR - Definition of Ready - Sprint 1
+### Requisitos Gerais
 
-### Requisitos gerais
-
-•	Wireframe ou protótipo aprovado pelo time/cliente.
-
-•	Layout definido (cores, tipografia, posicionamento dos elementos).
-
-•	Escopo claro: apenas visual, sem funcionalidades implementadas.
-
-•	Critério de aceite definido: tela deve refletir visualmente o que foi combinado.
+| Critério | Descrição |
+| :------- | :--------- |
+| Wireframe aprovado | Wireframe ou protótipo aprovado pelo time/cliente. |
+| Layout definido | Cores, tipografia e posicionamento dos elementos definidos. |
+| Escopo claro | Apenas visual, sem funcionalidades implementadas. |
+| Critério de aceite | Tela deve refletir visualmente o que foi combinado. |
 
 ### Tela do Orientador
 
-:white_check_mark: Mockup mostrando lista de alunos e projetos (mesmo com dados fictícios).
-
-:white_check_mark: Estrutura visual confirmada (lista/tabela/cards).
+| Critério | Descrição |
+| :------- | :--------- |
+| Mockup com dados fictícios | Mockup mostrando lista de alunos e projetos (mesmo com dados fictícios). |
+| Estrutura visual confirmada | Estrutura da tela (lista/tabela/cards) confirmada com o time. |
 
 ### Tela do Aluno
 
-:white_check_mark: Mockup do editor de Markdown (caixa de texto, botões básicos).
-
-:white_check_mark: Mockup da área de versões passadas (mesmo estático, sem lógica).
+| Critério | Descrição |
+| :------- | :--------- |
+| Mockup do editor de Markdown | Mockup do editor de Markdown (caixa de texto, botões básicos). |
+| Mockup da área de versões | Mockup da área de versões passadas (mesmo estático, sem lógica). |
 
 ### Tela do Coordenador
 
-:white_check_mark: Mockup da listagem de alunos com respectivos orientadores.
+| Critério | Descrição |
+| :------- | :--------- |
+| Mockup da listagem | Mockup da listagem de alunos com respectivos orientadores. |
+| Layout definido | Layout definido (tabela simples já basta). |
 
-:white_check_mark: Layout definido (tabela simples já basta).
 
-## DoD - Definition of Done  – Sprint 1
+## DoD - Definition of Done – Sprint 1
 
-### Requisitos gerais
+### Requisitos Gerais
 
-•	Todas as telas implementadas visualmente conforme os mockups.
-
-•	Disponíveis em repositório e acessíveis para demonstração.
-
-•	Testadas visualmente (elementos aparecem corretos, nada quebrado).
-
-•	Navegação básica (se houver) funcionando entre telas.
+| Critério | Descrição |
+| :------- | :--------- |
+| Implementação visual completa | Todas as telas implementadas visualmente conforme os mockups. |
+| Disponibilidade em repositório | Telas disponíveis em repositório e acessíveis para demonstração. |
+| Testes visuais realizados | Testadas visualmente (elementos aparecem corretos, nada quebrado). |
+| Navegação básica funcional | Navegação básica (se houver) funcionando entre telas. |
 
 ### Tela do Orientador
 
-:white_check_mark: Mostra lista de alunos e projetos (dados fictícios ou placeholders).
+| Critério | Descrição |
+| :------- | :--------- |
+| Lista de alunos e projetos | Mostra lista de alunos e projetos (dados fictícios ou placeholders). |
 
 ### Tela do Aluno
 
-:white_check_mark: Exibe editor de MD visual (sem salvar).
-
-:white_check_mark: Exibe área de versões passadas estática.
+| Critério | Descrição |
+| :------- | :--------- |
+| Editor de MD exibido | Exibe editor de Markdown visual (sem salvar). |
+| Versões passadas estáticas | Exibe área de versões passadas estática. |
 
 ### Tela do Coordenador
 
-:white_check_mark: Exibe tabela/lista de alunos com orientadores (dados fictícios).
+| Critério | Descrição |
+| :------- | :--------- |
+| Tabela de alunos e orientadores | Exibe tabela/lista de alunos com orientadores (dados fictícios). |
+
 
 ## Equipe
 
@@ -128,6 +135,7 @@ Nosso desafio nesta primeira sprint foi transformar as histórias de usuário em
       <td><img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/pfp_richard.jpeg" alt="Foto Richard" width="90"></td>
     </tr>
   </table>
+
 
 
 
