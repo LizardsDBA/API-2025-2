@@ -9,6 +9,10 @@
 Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionalidades reais. Vamos projetar o backend das telas essenciais para o Orientador e Aluno, criando um sistema funcional.
 
 ## Backlog da Sprint 2
+| META DA SPRINT | PREVISÃO DA SPRINT |
+| :--- | :--- |
+| US 4, 8, 9, 10 (total de 24 Story Points) | US 5 (total de 5 Story Points) |
+
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 4 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
@@ -114,5 +118,6 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
   </table>
 
   
+
 
 
