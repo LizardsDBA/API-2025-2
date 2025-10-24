@@ -15,9 +15,9 @@
 | 12 | Baixa | Como aluno, eu quero poder comparar diferentes versões do meu TG, para que eu possa ver as mudanças exatas que fiz ou as que o professor sugeriu. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 13 | Baixa | Como professor orientador, eu quero ter um histórico de todas as correções e feedbacks por aluno, para que eu possa acompanhar o progresso e não repetir comentários. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 
-## Burndown da Sprint 2
+## Burndown da Sprint 3
 
-## DoR - Definition of Ready - Sprint 2
+## DoR - Definition of Ready - Sprint 3
 
 ### Requisitos gerais
 
@@ -32,7 +32,7 @@
 |     Validação com PO e equipe      | A história foi discutida em refinamento ou planning e validada com o time dev.                     |
 | Alinhamento com arquitetura atual  | A funcionalidade proposta está coerente com o que já entregue na Sprint 1.                         |
 
-## DoD - Definition of Done  – Sprint 2
+## DoD - Definition of Done  – Sprint 3
 
 |                 Critério                 | Descrição                                                                                                        |
 | :--------------------------------------: | ---------------------------------------------------------------------------------------------------------------- |
