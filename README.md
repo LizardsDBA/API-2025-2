@@ -4,7 +4,7 @@
       <img src="docs/assets/logo_lizards.jpeg" alt="logo LizardsDBA" width="200">
 </p>
 <p align="center">
-  | <a href ="#desafio"> Desafio</a>  |
+  | <a href ="#desafio"> Desafio</a>  |        
   <a href ="#solução"> Solução</a>  |   
   <a href ="#backlog-do-produto"> Backlog do Produto</a>  |
   <a href ="#dor---definition-of-ready">DoR</a>  |
@@ -87,7 +87,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 
 ## Manual de Usuário
 
-[Manual do Usuário — TG Connect](https://github.com/LizardsDBA/API-2025-2/blob/main/docs/manuais/usuario/Manual%20do%20Usuario%20-%20TG%20Connect.pdf)
+[Manual do Usuário — TG Connect](docs/manuais/usuario/ManualdoUsuario-TGConnect.pdf)
 
 ## Equipe
 <table>
