@@ -23,8 +23,9 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
 
 ## Burndown - Sprint 2
 
- <img src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/BurndownSprint02.png" width="600">   
- 
+   
+ <img width="500" height="500" alt="BurndownSprint02" src="https://github.com/user-attachments/assets/a6589692-112b-4463-9617-2770fac2229a" />
+
 ## DoR – Sprint 2
 
 | US | Objetivo | Clareza / Escopo | Critérios de Aceitação | Dependências / Técnica / Validação |
@@ -118,6 +119,7 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
   </table>
 
   
+
 
 
 
