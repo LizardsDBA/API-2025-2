@@ -33,14 +33,14 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 | 1 | Alta | Como professor orientador, eu quero uma tela para visualizar alunos e projetos orientados, para que eu possa gerenciar de uma forma mais eficiente. | 2 | 1 | :white_check_mark: |
 | 2 | Alta | Como aluno, eu quero uma tela para visualizar o editor de MD e versões passadas, para que eu veja a evolução do projeto. | 2 | 1 | :white_check_mark: |
 | 3 | Alta | Como coordenador, eu quero uma tela para visualizar quais alunos são orientados por quais professores, para que eu possa ter um controle maior sobre os TGs. | 3 | 1 | :white_check_mark: |
-| 4 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 5 | Alta | Como professor orientador, eu quero visualizar o andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 6 | Alta | Como coordenador, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 4 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | :white_check_mark: |
+| 5 | Alta | Como professor orientador, eu quero visualizar o andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | 5 | 2 | :white_check_mark: |
+| 6 | Média | Como coordenador, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 7 | Média | Como aluno, eu quero ter acesso a um histórico completo de todas as versões do meu TG, para que eu possa ver a evolução do meu projeto e as correções passadas. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 8 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 9 | Média | Como professor orientador, eu quero poder dar feedback em um chat com o aluno, para que minhas correções sejam mais claras e específicas. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 10 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho. | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 11 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 8 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 | 2 | :white_check_mark: |
+| 9 | Média | Como professor orientador, eu quero poder dar feedback em um chat com o aluno, para que minhas correções sejam mais claras e específicas. | 8 | 2 | :white_check_mark: |
+| 10 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho. | 5 | 2 |:white_check_mark: |
+| 11 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | 3 | 2 | :white_check_mark: |
 | 12 | Baixa | Como aluno, eu quero poder comparar diferentes versões do meu TG, para que eu possa ver as mudanças exatas que fiz ou as que o professor sugeriu. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 13 | Baixa | Como professor orientador, eu quero ter um histórico de todas as correções e feedbacks por aluno, para que eu possa acompanhar o progresso e não repetir comentários. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 
@@ -67,7 +67,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 | Sprint | Período | Documentação |
 | :----- | :------: | :----------- |
 | 🟢 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
-| 🟡 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
+| 🟢 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 
 ---
@@ -75,11 +75,12 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 ## Tecnologias Utilizadas
 <h4 align="left">
 <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
-<a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/></a>&nbsp;
+<a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/MySQL-00758F.svg?style=for-the-badge&logo=mysql&logoColor=white"/></a>&nbsp;
 <a href="https://www.notion.com"><img src="https://img.shields.io/badge/notion-235A61.svg?style=for-the-badge&logo=notion&logoColor=white"/></a>&nbsp;
 <a href="https://www.jetbrains.com/pt-br/idea"><img src="https://img.shields.io/badge/IntelliJ%20IDEA-0076D6.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>&nbsp;
 <a href="https://www.java.com/pt-br/download/manual.jsp"><img src="https://img.shields.io/badge/Java-EA7018.svg?style=for-the-badge&logo=java&logoColor=white"/></a>&nbsp;
 <a href="https://www.atlassian.com/br/software/jira"><img src="https://img.shields.io/badge/Jira-0052CC.svg?style=for-the-badge&logo=jira&logoColor=white"/></a>
+
 </h4>
 
 ---

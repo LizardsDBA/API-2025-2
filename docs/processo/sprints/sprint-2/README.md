@@ -8,42 +8,44 @@
 
 Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionalidades reais. Vamos projetar o backend das telas essenciais para o Orientador e Aluno, criando um sistema funcional.
 
-## Backlog da Sprint 2
+## Backlog - Sprint 2
+| META DA SPRINT | PREVISÃO DA SPRINT |
+| :--- | :--- |
+| US 4, 8, 9, 10 (total de 24 Story Points) | US 5 (total de 5 Story Points) |
+
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 4 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 5 | Alta | Como professor orientador, eu quero visualizar o andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 8 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 9 | Média | Como professor orientador, eu quero poder dar feedback em um chat com o aluno, para que minhas correções sejam mais claras e específicas. | 8 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
-| 10 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho. | 5 | 2 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 4 | Alta | Como aluno, eu quero um campo de texto para escrever meu código em seções e traduzir para MD. | 3 | 2 | :white_check_mark: |
+| 5 | Alta | Como professor orientador, eu quero visualizar o andamento de cada TG, para que eu possa gerenciar a orientação de vários alunos de forma mais eficiente. | 5 | 2 | :white_check_mark: |
+| 8 | Média | Como aluno, eu quero ter um chat para conversar com o orientador do TG, para me manter ciente de todas as informações passadas por ele. | 8 | 2 | :white_check_mark:|
+| 9 | Média | Como professor orientador, eu quero poder dar feedback em um chat com o aluno, para que minhas correções sejam mais claras e específicas. | 8 | 2 | :white_check_mark: |
+| 10 | Média | Como professor orientador, eu quero um painel de controle que me mostre todos os projetos pendentes de feedback em um só lugar, para que eu possa priorizar meu trabalho. | 5 | 2 | :white_check_mark: |
 
-## Burndown da Sprint 2
+## Burndown - Sprint 2
 
-## DoR - Definition of Ready - Sprint 2
+## DoR – Sprint 2
 
-### Requisitos gerais
+| US | Objetivo | Clareza / Escopo | Critérios de Aceitação | Dependências / Técnica / Validação |
+|----|-----------|------------------|-------------------------|------------------------------------|
+| **US04** | Campo de texto → converter para MD | Fluxo: digitação → converter → preview → salvar MD (`tg_secao`); JavaFX (TextArea + preview) + `MarkdownService`. | 1) Editor aceita texto; 2) Conversão MD; 3) Salvar MD; | Independente; padrão DAO/Service. |
+| **US05** | Visualizar andamento dos TGs | Tabela/cards com % e status; DAO `Andamento`/`Orientacao`; JavaFX. | 1) Exibir %; 2) Ordenar; 3) Filtro; 4) Detalhes. | Independente; consultas agregadas; wireframe aprovado. |
+| **US08** | Chat aluno↔orientador | Chat 1:1 com lista e janela de mensagens; DAO `Mensagem`, `ChatService`. | 1) Listar; 2) Enviar/receber; | Independente; UI validada; scroll eficiente. |
+| **US09** | Feedback no chat | Mesmo chat (US08) com flag `feedback` vinculada à `tg_secao`. | 1) Enviar feedback; 2) Associar seção; 3) Registrar histórico. | Depende de US08; estrutura validada; sem duplicidade de dados. |
+| **US10** | Painel com projetos pendentes | Dashboard com KPIs e filtros. | 1) KPIs; 2) Filtros; 3) Navegação; | Independente; layout aprovado. |
 
-|              Critério              | Descrição                                                                                          |
-| :--------------------------------: | -------------------------------------------------------------------------------------------------- |
-|        Clareza na Descrição        | A User Story está escrita no formato “Como [persona], quero [ação] para que [objetivo]”            |
-|  Critérios de Aceitação Definidos  | A história possui critérios objetivos que indicam o que é necessário para considerá-la concluída.  |
-|  Cenários de Teste Especificados   | A história tem pelo menos 1 cenário de teste estruturado (Dado, Quando, Então).                    |
-|            Independente            | A história pode ser implementada sem depender de outra tarefa da mesma Sprint.                     |
-|      Escopo Técnico Validado       | Há clareza se a história envolve frontend, backend ou ambos — com pontos de integração definidos.  |
-|             Estímável              | A história foi pontuada no Planning Poker ou tem uma estimativa clara.                             |
-|     Validação com PO e equipe      | A história foi discutida em refinamento ou planning e validada com o time dev.                     |
-| Alinhamento com arquitetura atual  | A funcionalidade proposta está coerente com o que já entregue na Sprint 1.                         |
+---
 
-## DoD - Definition of Done  – Sprint 2
+## 🔵 Definition of Done – Sprint 2
 
-|                 Critério                 | Descrição                                                                                                        |
-| :--------------------------------------: | ---------------------------------------------------------------------------------------------------------------- |
-|     Critérios de Aceitação atendidos     | Todos os critérios definidos na US foram implementados e validados com sucesso.                                  |
-| Cenários de Teste executados e aprovados | Todos os cenários descritos foram validados manualmente.                                                         |
-|      Código revisado (Code Review)       | A US passou por revisão antes da integração.                                                                     |
-|  Integrado com o restante da aplicação   | A funcionalidade foi testada junto com o fluxo completo do sistema (Ex: Envio → Correção → Feedback). |
-|         Validação final com o PO         | O PO testou e confirmou que a funcionalidade atende ao esperado.                                                 |
-|            Pronta para Deploy            | A funcionalidade pode ser entregue ao ambiente final sem pendências.                                             |
+| US | Evidências de Conclusão |
+|----|--------------------------|
+| **US04** | Vídeo: digitar → converter → preview → salvar → reabrir. |
+| **US05** | Screenshot dos cards/tabela. |
+| **US08** | Vídeo: envio e ordenação por última mensagem. | 
+| **US09** | Vídeo: envio de feedback vinculado à seção. 
+| **US10** | KPIs e navegação entre cards funcionando. |
+
+---
 
 ## Equipe
 
@@ -114,5 +116,8 @@ Nosso desafio nesta segunda sprint foi transformar as User Stories em funcionali
   </table>
 
   
+
+
+
 
 
