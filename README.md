@@ -85,9 +85,9 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 
 ---
 
-## Manual de Instalação
+## Manual de Usuário
 
----
+[Manual do Usuário — TG Connect](https://github.com/LizardsDBA/API-2025-2/blob/main/docs/manuais/usuario/Manual%20do%20Usuario%20-%20TG%20Connect.pdf)
 
 ## Equipe
 <table>
