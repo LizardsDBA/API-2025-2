@@ -87,7 +87,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 
 ## Manual de Usuário
 
-[Manual do Usuário — TG Connect](docs/manuais/usuario/ManualdoUsuario-TGConnect.pdf)
+[Manual do Usuário — TG Connect](docs/manuais/usuario/ManualDoUsuarioTgConnect.pdf)
 
 ## Equipe
 <table>
