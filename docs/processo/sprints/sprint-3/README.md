@@ -8,10 +8,16 @@
 
 
 ## Backlog da Sprint 3
+
+| META DA SPRINT | PREVISÃO DA SPRINT |
+| :--- | :--- |
+| US 6, 7, 11, 12, 13 (total de 21 Story Points) | Concluir todos os requisitos |
+
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 6 | Alta | Como coordenador, eu quero saber quais professores orientam quais alunos e o andamento dos projetos, para que eu possa acompanhar o progresso geral e dar suporte quando necessário. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 7 | Média | Como aluno, eu quero ter acesso a um histórico completo de todas as versões do meu TG, para que eu possa ver a evolução do meu projeto e as correções passadas. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
+| 11 | Baixa | Como aluno, eu quero conseguir comprovar o percentual de conclusão do meu TG de forma fácil, para que eu possa atender às exigências das disciplinas de TG. | 3 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 12 | Baixa | Como aluno, eu quero poder comparar diferentes versões do meu TG, para que eu possa ver as mudanças exatas que fiz ou as que o professor sugeriu. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 | 13 | Baixa | Como professor orientador, eu quero ter um histórico de todas as correções e feedbacks por aluno, para que eu possa acompanhar o progresso e não repetir comentários. | 5 | 3 | <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/02ef439d-2c01-46d1-9b6e-62fbe6173873" /> |
 
@@ -20,28 +26,23 @@
 ## DoR - Definition of Ready - Sprint 3
 
 ### Requisitos gerais
-
-|              Critério              | Descrição                                                                                          |
-| :--------------------------------: | -------------------------------------------------------------------------------------------------- |
-|        Clareza na Descrição        | A User Story está escrita no formato “Como [persona], quero [ação] para que [objetivo]”            |
-|  Critérios de Aceitação Definidos  | A história possui critérios objetivos que indicam o que é necessário para considerá-la concluída.  |
-|  Cenários de Teste Especificados   | A história tem pelo menos 1 cenário de teste estruturado (Dado, Quando, Então).                    |
-|            Independente            | A história pode ser implementada sem depender de outra tarefa da mesma Sprint.                     |
-|      Escopo Técnico Validado       | Há clareza se a história envolve frontend, backend ou ambos — com pontos de integração definidos.  |
-|             Estímável              | A história foi pontuada no Planning Poker ou tem uma estimativa clara.                             |
-|     Validação com PO e equipe      | A história foi discutida em refinamento ou planning e validada com o time dev.                     |
-| Alinhamento com arquitetura atual  | A funcionalidade proposta está coerente com o que já entregue na Sprint 1.                         |
+| US | Objetivo | Clareza / Escopo | Critérios de Aceitação | Dependências / Técnica / Validação |
+|----|-----------|------------------|-------------------------|------------------------------------|
+| US06 | Visualizar orientadores, alunos e andamento dos TGs | Tabela/cards relacionando orientadores ↔ alunos + % de conclusão e status do TG; DAO Orientacao/Andamento; JavaFX com filtros e busca. | 1) Exibir lista de orientadores com seus alunos; 2) Mostrar status e % de cada TG; 3) Filtros por orientador e status; 4) Layout responsivo. | Independente; consultas agregadas; wireframe aprovado. |
+| US07 | Histórico completo das versões do TG | Listagem cronológica das versões do TG do aluno; DAO TGVersao; Exibir data, comentário e arquivo. | 1) Exibir todas as versões do TG; 2) Permitir download/visualização; 3) Mostrar data e feedback de cada versão. | Independente; DAO validado; integração com armazenamento de arquivos. |
+| US11 | Comprovar percentual de conclusão do TG | Exibir percentual de conclusão consolidado a partir das seções entregues; Interface simples para visualização e exportação (PDF/imagem); DAO Andamento/TGSecao. | 1) Mostrar % de conclusão total; 2) Permitir exportar/comprovar progresso; 3) Atualizar automaticamente conforme novas versões são enviadas. | Depende de US07 e US06; validação de cálculo de progresso. |
+| US12 | Comparar diferentes versões do TG | Módulo de comparação entre versões; DAO TGVersao; Destacar diferenças (texto, alterações, comentários). | 1) Selecionar duas versões; 2) Mostrar diferenças lado a lado; 3) Evidenciar adições/remoções; 4) Interface intuitiva. | Depende de US07; validação da lógica de comparação de texto. |
+| US13 | Histórico de feedbacks por aluno | Exibir e registrar todos os feedbacks de um orientador por aluno; DAO Feedback/Aluno. | 1) Exibir histórico agrupado por aluno; 2) Mostrar data, versão e conteúdo; 3) Permitir filtrar por data/status. | Depende de US08 e US09; estrutura de dados validada. |
 
 ## DoD - Definition of Done  – Sprint 3
 
-|                 Critério                 | Descrição                                                                                                        |
-| :--------------------------------------: | ---------------------------------------------------------------------------------------------------------------- |
-|     Critérios de Aceitação atendidos     | Todos os critérios definidos na US foram implementados e validados com sucesso.                                  |
-| Cenários de Teste executados e aprovados | Todos os cenários descritos foram validados manualmente.                                                         |
-|      Código revisado (Code Review)       | A US passou por revisão antes da integração.                                                                     |
-|  Integrado com o restante da aplicação   | A funcionalidade foi testada junto com o fluxo completo do sistema (Ex: Envio → Correção → Feedback). |
-|         Validação final com o PO         | O PO testou e confirmou que a funcionalidade atende ao esperado.                                                 |
-|            Pronta para Deploy            | A funcionalidade pode ser entregue ao ambiente final sem pendências.                                             |
+| US | Evidências de Conclusão |
+|----|--------------------------|
+| US06 | Listagem dos orientadores com seus respectivos alunos e status de andamento (% concluído, status do TG). Filtros e busca funcionando.|
+| US07 | Exibição do histórico completo de versões do TG com data, comentário e opção de visualização/download funcionando.|
+| US11 | Tela exibindo o percentual total de conclusão do TG e opção de exportar comprovante (PDF ou imagem).|
+| US12 | Comparação entre duas versões do TG mostrando as diferenças lado a lado (adições, remoções e alterações destacadas).|
+| US13 | Histórico de feedbacks por aluno exibindo data, versão e conteúdo; filtros por data e status funcionando.|
 
 ## Equipe
 
