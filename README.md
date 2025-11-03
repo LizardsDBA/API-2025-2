@@ -68,7 +68,7 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 | :----- | :------: | :----------- |
 | 🟢 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
 | 🟢 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
-| 🔴 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
+| 🟢 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 
 ---
 
