@@ -29,8 +29,8 @@
 | US | Objetivo | Clareza / Escopo | Critérios de Aceitação | Dependências / Técnica / Validação |
 |----|-----------|------------------|-------------------------|------------------------------------|
 | US06 | Visualizar orientadores, alunos e andamento dos TGs | Tabela/cards relacionando orientadores ↔ alunos + % de conclusão e status do TG; DAO Orientacao/Andamento; JavaFX com filtros e busca. | 1) Exibir lista de orientadores com seus alunos; 2) Mostrar status e % de cada TG; 3) Filtros por orientador e status; 4) Layout responsivo. | Independente; consultas agregadas; wireframe aprovado. |
-| US07 | Histórico completo das versões do TG | Listagem cronológica das versões do TG do aluno; DAO TGVersao; Exibir data, comentário e arquivo. | 1) Exibir todas as versões do TG; 2) Permitir download/visualização; 3) Mostrar data e feedback de cada versão. | Independente; DAO validado; integração com armazenamento de arquivos. |
-| US11 | Comprovar percentual de conclusão do TG | Exibir percentual de conclusão consolidado a partir das seções entregues; Interface simples para visualização e exportação (PDF/imagem); DAO Andamento/TGSecao. | 1) Mostrar % de conclusão total; 2) Permitir exportar/comprovar progresso; 3) Atualizar automaticamente conforme novas versões são enviadas. | Depende de US07 e US06; validação de cálculo de progresso. |
+| US07 | Histórico completo das versões do TG | Listagem cronológica das versões do TG do aluno; DAO TGVersao; Exibir data, comentário e arquivo. | 1) Exibir todas as versões do TG. | Independente; DAO validado; |
+| US11 | Comprovar percentual de conclusão do TG | Exibir percentual de conclusão consolidado a partir das seções entregues; Interface simples para visualização; DAO Andamento/TGSecao. | 1) Mostrar % de conclusão total; 2) Atualizar automaticamente conforme novas versões são enviadas. | Depende de US07 e US06; validação de cálculo de progresso. |
 | US12 | Comparar diferentes versões do TG | Módulo de comparação entre versões; DAO TGVersao; Destacar diferenças (texto, alterações, comentários). | 1) Selecionar duas versões; 2) Mostrar diferenças lado a lado; 3) Evidenciar adições/remoções; 4) Interface intuitiva. | Depende de US07; validação da lógica de comparação de texto. |
 | US13 | Histórico de feedbacks por aluno | Exibir e registrar todos os feedbacks de um orientador por aluno; DAO Feedback/Aluno. | 1) Exibir histórico agrupado por aluno; 2) Mostrar data, versão e conteúdo; 3) Permitir filtrar por data/status. | Depende de US08 e US09; estrutura de dados validada. |
 
@@ -39,8 +39,8 @@
 | US | Evidências de Conclusão |
 |----|--------------------------|
 | US06 | Listagem dos orientadores com seus respectivos alunos e status de andamento (% concluído, status do TG). Filtros e busca funcionando.|
-| US07 | Exibição do histórico completo de versões do TG com data, comentário e opção de visualização/download funcionando.|
-| US11 | Tela exibindo o percentual total de conclusão do TG e opção de exportar comprovante (PDF ou imagem).|
+| US07 | Exibição do histórico completo de versões do TG com data, comentário e opção de visualização funcionando.|
+| US11 | Tela exibindo o percentual total de conclusão do TG.|
 | US12 | Comparação entre duas versões do TG mostrando as diferenças lado a lado (adições, remoções e alterações destacadas).|
 | US13 | Histórico de feedbacks por aluno exibindo data, versão e conteúdo; filtros por data e status funcionando.|
 
