@@ -8,20 +8,11 @@
 
 > Observação: As contas de exemplo e perfis podem ser criadas pelas *seeds* do banco. Caso não haja usuário, um administrador deverá inserir via SQL.
 
-<img width="840" height="558" alt="TelaLogin" src="https://github.com/user-attachments/assets/f04524d5-0767-4ce2-b6e9-95beb935af87" />
+<img width="1112" height="567" alt="TeladeLogin" src="https://github.com/user-attachments/assets/bd449a2d-075c-49be-8599-9fa1d8826f6b" />
+
 
 ## Perfil Aluno
-### 1. Primeiro Acesso e Dashboard
-Ao entrar no sistema, você verá o **Dashboard**, sua central de controle principal.
-
-* **Percentual de Conclusão:** Uma barra de progresso que reflete o status real do seu trabalho.
-    * *Nota:* O sistema avalia exatamente **58 itens obrigatórios** (9 na apresentação, 48 nas APIs e 1 no resumo). O percentual só aumenta quando o orientador **Aprova** esses itens individualmente.
-* **Pendências:** Número de correções solicitadas pelo orientador que ainda não foram resolvidas.
-* **Versão Atual:** Indica a versão do documento em que você está trabalhando (ex: `v1`, `v1.1`).
-
-<img width="836" height="560" alt="Dashbord" src="https://github.com/user-attachments/assets/e1eae47c-7867-4ce1-b0d7-87cf4c3b96db" />
-
-## 2. Solicitação de Orientação
+## 1. Solicitação de Orientação
 Se você ainda não possui um orientador vinculado, esta é sua primeira etapa.
 
 1. Acesse o menu **Solicitação**.
@@ -38,6 +29,18 @@ Se você ainda não possui um orientador vinculado, esta é sua primeira etapa.
 > * **Pendente:** Aguarde o aceite do professor.
 > * **Recusada:** O professor pode recusar o pedido. Se isso ocorrer, você verá uma justificativa em vermelho e poderá fazer uma nova solicitação.
 > * **Aprovada:** O sistema libera automaticamente o acesso ao **Editor de TG**.
+
+<img width="1121" height="571" alt="TelaDeStatusSolicitacao" src="https://github.com/user-attachments/assets/01dbfeda-ab15-4480-9034-a20630269c4e" />
+
+### 2. Primeiro Acesso e Dashboard
+Ao entrar no sistema, você verá o **Dashboard**, sua central de controle principal.
+
+* **Percentual de Conclusão:** Uma barra de progresso que reflete o status real do seu trabalho.
+    * *Nota:* O sistema avalia exatamente **58 itens obrigatórios** (9 na apresentação, 48 nas APIs e 1 no resumo). O percentual só aumenta quando o orientador **Aprova** esses itens individualmente.
+* **Pendências:** Número de correções solicitadas pelo orientador que ainda não foram resolvidas.
+* **Versão Atual:** Indica a versão do documento em que você está trabalhando (ex: `v1`, `v1.1`).
+
+<img width="1118" height="564" alt="DashbordAluno" src="https://github.com/user-attachments/assets/d9a1bd30-2849-4781-abf5-1852b6c543e8" />
 
 ## 3. Editor de TG (Escrita e Submissão)
 Acesse o menu **Editor de TG** para desenvolver o conteúdo. O trabalho é dividido em abas para facilitar a organização.
@@ -65,6 +68,8 @@ Acesse o menu **Editor de TG** para desenvolver o conteúdo. O trabalho é divid
     * Use este botão quando finalizar a escrita da versão.
     * **⚠️ Atenção:** Ao solicitar revisão, o status do trabalho muda para `ENTREGUE` e **seu editor será bloqueado** para escrita até que o orientador devolva o trabalho.
 
+<img width="1116" height="570" alt="EditorTgAluno" src="https://github.com/user-attachments/assets/057d8627-3cf6-43c8-9fa3-6fbb37f8b2c9" />
+
 ## 4. Recebendo Feedback
 
 ### Comparar Versões
@@ -77,8 +82,13 @@ Quando o orientador devolve o trabalho com correções, acesse o menu **Comparar
 ### Histórico
 No menu **Histórico**, você pode acessar a linha do tempo completa de todas as versões enviadas e ler os feedbacks gerais de cada etapa.
 
+<img width="1115" height="570" alt="CompararVersoesAluno" src="https://github.com/user-attachments/assets/f48ba300-fa6a-44e4-ac33-5be6311f080d" />
+
 ## 5. Comunicação (Inbox)
 Use a aba **Inbox** para trocar mensagens rápidas com seu orientador. O chat atualiza automaticamente a cada poucos segundos.
+
+<img width="1106" height="568" alt="ChatAluno" src="https://github.com/user-attachments/assets/ff29aea8-6562-4564-b5f8-319ac2793e68" />
+
 
 # 📘 Manual do Usuário: Perfil Orientador
 **Sistema de Gerenciamento de Trabalhos de Graduação (TG)**
@@ -161,4 +171,5 @@ O Coordenador tem permissão de leitura em **todos** os trabalhos do sistema par
 2. Selecione qualquer aluno na lista "Meus Orientandos" (que lista todos os alunos do curso).
 3. **Linha do Tempo:** Visualize todas as versões submetidas e feedbacks trocados.
 4. **Inspeção:** Ao clicar em uma versão, o sistema exibe o **Markdown** (código fonte) e o **Preview** (documento renderizado) exatamente como estavam naquela data.
+
 
