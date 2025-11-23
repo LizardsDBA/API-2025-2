@@ -23,7 +23,7 @@
 
 ## Burndown da Sprint 3
 
-<img width="500" height="500" alt="BurndownSprint03" src="https://github.com/LizardsDBA/API-2025-2/blob/main/docs/assets/BurndownSprint03.png" />
+<img width="421" height="277" alt="BurndownSprint03" src="https://github.com/user-attachments/assets/ac36c99b-447f-4423-b786-e590d4e3989a" />
 
 ## DoR - Definition of Ready - Sprint 3
 
