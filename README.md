@@ -10,8 +10,9 @@
   <a href ="#dor---definition-of-ready">DoR</a>  |
   <a href ="#dod---definition-of-done">DoD</a>  |
   <a href ="#cronograma-de-sprints"> Cronograma de Sprints</a>  |
+  <a href = "#vídeo-de-apresentação"> Vídeo de apresentação</a> |
   <a href ="#tecnologias-utilizadas">Tecnologias</a> |
-  <a href ="#manual-de-instalação">Manual</a> |
+  <a href ="#manuais">Manuais</a> |
   <a href ="#equipe"> Equipe</a> |
 </p>
 
@@ -72,6 +73,11 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 
 ---
 
+## Vídeo de apresentação
+Link: [TG Connect](https://youtu.be/WSVSBzubBcA)
+
+---
+
 ## Tecnologias Utilizadas
 <h4 align="left">
 <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
@@ -85,9 +91,10 @@ O TG Connect permitirá que alunos submetam versões do TG em Markdown, que orie
 
 ---
 
-## Manual de Usuário
+## Manuais
+[Manual do Usuário e Técnico — TG Connect](docs/manuais/)
 
-[Manual do Usuário — TG Connect](docs/manuais/usuario/ManualDoUsuarioTgConnect.pdf)
+
 
 ## Equipe
 <table>
