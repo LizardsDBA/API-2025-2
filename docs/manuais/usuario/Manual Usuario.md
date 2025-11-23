@@ -8,6 +8,8 @@
 
 > Observação: As contas de exemplo e perfis podem ser criadas pelas *seeds* do banco. Caso não haja usuário, um administrador deverá inserir via SQL.
 
+<img width="840" height="558" alt="TelaLogin" src="https://github.com/user-attachments/assets/f04524d5-0767-4ce2-b6e9-95beb935af87" />
+
 ## Perfil Aluno
 ### 1. Primeiro Acesso e Dashboard
 Ao entrar no sistema, você verá o **Dashboard**, sua central de controle principal.
@@ -16,6 +18,8 @@ Ao entrar no sistema, você verá o **Dashboard**, sua central de controle princ
     * *Nota:* O sistema avalia exatamente **58 itens obrigatórios** (9 na apresentação, 48 nas APIs e 1 no resumo). O percentual só aumenta quando o orientador **Aprova** esses itens individualmente.
 * **Pendências:** Número de correções solicitadas pelo orientador que ainda não foram resolvidas.
 * **Versão Atual:** Indica a versão do documento em que você está trabalhando (ex: `v1`, `v1.1`).
+
+<img width="836" height="560" alt="Dashbord" src="https://github.com/user-attachments/assets/e1eae47c-7867-4ce1-b0d7-87cf4c3b96db" />
 
 ## 2. Solicitação de Orientação
 Se você ainda não possui um orientador vinculado, esta é sua primeira etapa.
@@ -26,6 +30,9 @@ Se você ainda não possui um orientador vinculado, esta é sua primeira etapa.
     * **Título do TG:** O nome provisório do seu trabalho.
     * **Tema:** A área de estudo.
 4. Clique em **Solicitar Orientação**.
+
+<img width="1102" height="566" alt="Captura de tela 2025-11-23 173025" src="https://github.com/user-attachments/assets/7396ca9e-91be-4986-9fd1-f3c2f0fa5205" />
+
 
 > **Status da Solicitação:**
 > * **Pendente:** Aguarde o aceite do professor.
@@ -154,3 +161,4 @@ O Coordenador tem permissão de leitura em **todos** os trabalhos do sistema par
 2. Selecione qualquer aluno na lista "Meus Orientandos" (que lista todos os alunos do curso).
 3. **Linha do Tempo:** Visualize todas as versões submetidas e feedbacks trocados.
 4. **Inspeção:** Ao clicar em uma versão, o sistema exibe o **Markdown** (código fonte) e o **Preview** (documento renderizado) exatamente como estavam naquela data.
+
