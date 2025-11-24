@@ -21,27 +21,10 @@
 2. **Obtenha o projeto**  
    Descompacte o ZIP enviado ou clone o repositório.
     ```bash
-    git clone https://github.com/LizardsDBA/tg-connect/tree/07f533ad7922953bb08621aca3a262977a81fc21
+    git clone https://github.com/LizardsDBA/API-2025-2.git
     ```
-   ```bash
-   cd tg-connect-main/tg-connect-main
-   ls
-   # espera-se ver: pom.xml, src/, etc.
-   ```
 
-3. **Verifique/ajuste credenciais do banco (opcional)**  
-   O projeto inicializa o banco automaticamente na primeira execução:
-   - Arquivo: `src/main/java/br/edu/fatec/api/config/Database.java`
-   - Por padrão:
-     - ROOT_USER = `root`
-     - ROOT_PASS = `""` (vazio) — **ajuste para a senha real do root** se necessário.
-     - APP_USER = `tguser`
-     - APP_PASS = `pass123`
-
-   Se seu MySQL **não** permitir login do root sem senha, **edite** `ROOT_PASS` para sua senha real antes de rodar.
-
-4. **Primeira execução**  
-   - O app tentará:
-     1) Executar `schema-bootstrap.sql` (com `root`) para criar DB/usuário.
-     2) Executar `schema-app.sql` (com `tguser` ou fallback `root`) para criar tabelas e seeds.
-   - Se aparecer erro de autenticação no MySQL, ajuste `Database.java` (usuário/senha) e rode novamente.
+3. **Utilizar o executável**
+    ```bash
+    docs/Executavel/run.bat 
+    ```
