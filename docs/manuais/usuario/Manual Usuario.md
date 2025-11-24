@@ -102,11 +102,16 @@ Ao acessar o sistema, você verá os KPIs (Indicadores de Desempenho) da sua ori
 * **Alunos com Reprovações:** Alunos que possuem itens marcados como "Reprovado" na versão atual.
 * **TGs Concluídos:** Alunos que atingiram 100% de aprovação nos 58 critérios.
 
+<img width="1101" height="561" alt="DashboardOrientador" src="https://github.com/user-attachments/assets/b71573d3-0909-4aed-a2d1-e78385ff8c18" />
+
 ## 2. Gestão de Solicitações
 Novos alunos solicitam orientação via sistema. Acesse o menu **Solicitações**.
 * **Analisar:** Verifique o Nome, Título Proposto e Tema.
 * **Aprovar:** O aluno é vinculado à sua lista e o TG é iniciado.
 * **Recusar:** É obrigatório preencher o campo **Justificativa**. O aluno receberá essa mensagem explicando o motivo da recusa.
+
+<img width="1097" height="566" alt="TelaSolicitacoes" src="https://github.com/user-attachments/assets/b61b146f-a830-4262-a5a5-9de11fc24bd2" />
+
 
 ## 3. Painel de Orientação
 O menu **Painel** lista todos os seus alunos ativos.
@@ -115,9 +120,13 @@ O menu **Painel** lista todos os seus alunos ativos.
     * *Aguardando Revisão:* O aluno enviou uma versão e está bloqueado. **Ação necessária.**
     * *Revisado (Pendências):* O trabalho está com o aluno para ajustes.
     * *Concluído:* Trabalho aprovado.
+ 
+<img width="1097" height="560" alt="PainelOrientacao" src="https://github.com/user-attachments/assets/07173190-2cd4-4301-b5e5-dd88982214a6" />
 
 ## 4. Realizando a Correção (Feedback)
 Para corrigir um trabalho, vá ao menu **Feedback** (ou "Editor") e selecione um aluno na lista.
+
+<img width="1103" height="569" alt="FeedbackOrientador" src="https://github.com/user-attachments/assets/a4190557-e334-4666-ad11-77bedaa19c99" />
 
 ### 4.1. Ferramentas de Avaliação
 Clique no botão **"Dar Feedback por Campo (Avaliar TG)"** para abrir o modal de correção.
@@ -136,9 +145,16 @@ Após revisar os itens, clique em **"Finalizar e Enviar Devolutiva"**.
 * Se houver **0 pendências**, o status do TG muda automaticamente para `APROVADO`.
 * Se houver **1 ou mais reprovações**, o status muda para `REPROVADO` e o editor é liberado para o aluno corrigir.
 
+<img width="1093" height="563" alt="FeedbackPorCampo" src="https://github.com/user-attachments/assets/6ec6c4d9-6446-4d75-ba47-49d6d4fc24b1" />
+
 ## 5. Chat e Histórico
 * **Chat:** Utilize para comunicação direta e rápida.
+
+<img width="1100" height="559" alt="ChatOrientador" src="https://github.com/user-attachments/assets/bb6d7e8d-8ca1-4913-b277-c0053b95d8dd" />
+  
 * **Histórico:** Permite visualizar "snapshots" (versões antigas) do trabalho do aluno para fins de auditoria ou consulta.
+
+<img width="1099" height="561" alt="PainelHistorico" src="https://github.com/user-attachments/assets/1496d5f1-fa54-4fe2-9a7b-e53888f7b14d" />
 
 # 📘 Manual do Usuário: Perfil Coordenador
 **Sistema de Gerenciamento de Trabalhos de Graduação (TG)**
@@ -171,5 +187,6 @@ O Coordenador tem permissão de leitura em **todos** os trabalhos do sistema par
 2. Selecione qualquer aluno na lista "Meus Orientandos" (que lista todos os alunos do curso).
 3. **Linha do Tempo:** Visualize todas as versões submetidas e feedbacks trocados.
 4. **Inspeção:** Ao clicar em uma versão, o sistema exibe o **Markdown** (código fonte) e o **Preview** (documento renderizado) exatamente como estavam naquela data.
+
 
 
