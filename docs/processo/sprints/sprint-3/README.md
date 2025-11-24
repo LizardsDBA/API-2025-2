@@ -46,6 +46,8 @@
 | US12 | Comparação entre duas versões do TG mostrando as diferenças lado a lado (adições, remoções e alterações destacadas).|
 | US13 | Histórico de feedbacks por aluno exibindo data, versão e conteúdo; filtros por data e status funcionando.|
 
+## Link do vídeo do incremento
+[TG Connect - Sprint 3](https://youtu.be/pd6hCQDINf4)
 ## Equipe
 
  <table>
