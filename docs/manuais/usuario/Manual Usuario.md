@@ -167,10 +167,14 @@ O **Dashboard** inicial apresenta a saúde do curso em relação aos TGs:
 * **Orientadores com Alunos:** Quantidade de professores orientando ativamente.
 * **Orientadores Livres:** Professores cadastrados mas sem alunos vinculados.
 
+<img width="1092" height="560" alt="DashboardCoordenador" src="https://github.com/user-attachments/assets/163e70c5-5715-4cf4-b30f-5be8f49604df" />
+
 ## 2. Mapa de Orientação
 Acesse o menu **Mapa de Orientação** para uma visão relacional completa.
 * **Tabela Geral:** Exibe a relação `Professor ↔ Aluno ↔ Tema ↔ Status`.
 * **Filtros:** Utilize a busca textual ou o filtro de status ("Em andamento", "Entregue", etc.) para localizar situações específicas rapidamente.
+
+<img width="1091" height="555" alt="MapaDeOrientacaoCoordenador" src="https://github.com/user-attachments/assets/d9c6e728-92c9-458d-8268-90c471d3d173" />
 
 ## 3. Acompanhamento de Andamento
 No menu **Andamento Geral**, o foco é o cumprimento de prazos e qualidade.
@@ -180,6 +184,8 @@ No menu **Andamento Geral**, o foco é o cumprimento de prazos e qualidade.
     * *Atrasado:* O aluno possui correções pendentes não resolvidas.
 * **Última Atualização:** Data da última interação no projeto, permitindo identificar alunos estagnados.
 
+<img width="1090" height="558" alt="AcompahamentoGeral" src="https://github.com/user-attachments/assets/c8ec90ae-2015-4394-8e69-621090871737" />
+
 ## 4. Auditoria (Histórico de Versões)
 O Coordenador tem permissão de leitura em **todos** os trabalhos do sistema para fins de auditoria.
 
@@ -187,6 +193,11 @@ O Coordenador tem permissão de leitura em **todos** os trabalhos do sistema par
 2. Selecione qualquer aluno na lista "Meus Orientandos" (que lista todos os alunos do curso).
 3. **Linha do Tempo:** Visualize todas as versões submetidas e feedbacks trocados.
 4. **Inspeção:** Ao clicar em uma versão, o sistema exibe o **Markdown** (código fonte) e o **Preview** (documento renderizado) exatamente como estavam naquela data.
+
+<img width="1090" height="559" alt="HistoricoDeVersoes" src="https://github.com/user-attachments/assets/fba732ec-605b-4234-87f3-0e204230de25" />
+
+
+
 
 
 
